@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gef Guarda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/logobranco.png" alt="Logo GEF Guarda">
+        </div>
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#">POS</a>
+            <a href="#">Videovigilância</a>
+            <a href="#">Controlo de acessos</a>
+            <a href="#">Software</a>
+            <a href="#">Notícias</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Bem Vindo</h2>
+        <div class="banner">
+            <p>Bem vindos, somos a GEF Guarda.
+                Somos uma empresa prestadora de serviços e fornecedora de soluções globais na área dos sistemas de informação.
+                Estejam á vontade para ver os nossos produtos e contactem-nos em caso de necessidade.
+            </p>
+            <h2>Serviços</h2>
+            <a href="servicos.html"><img src="images/hpbanner.png" alt=""></a>
+        </div>
+        <h2>Produtos</h2>
+        <div class="produtosimg">
+            <img src="https://scontent.flis11-2.fna.fbcdn.net/v/t39.30808-6/436766739_889230379881274_3163358934886230977_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RXI6zkDkEKkAb7W1vBa&_nc_ht=scontent.flis11-2.fna&oh=00_AfCMQR6nVLTNe1RpfhASUvgbI7PPGZexY76GJbVhFuwagw&oe=66241655" alt="">
+            <img src="https://scontent.flis11-2.fna.fbcdn.net/v/t39.30808-6/420357551_887705670033745_3369046395730799714_n.jpg?stp=dst-jpg_p180x540&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pzx2c5vkl3sAb4K3y2W&_nc_ht=scontent.flis11-2.fna&oh=00_AfCGb_UHSh6u7k5KM3hV-Wmsf838Ew5InH1rJmgVPudpCA&oe=66242195" alt="">
+            <img src="https://scontent.flis11-1.fna.fbcdn.net/v/t39.30808-6/335509900_1850755455295465_3356173265171351304_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JVVN41SAm3UAb4MRXOX&_nc_ht=scontent.flis11-1.fna&oh=00_AfDhowxnLQxElo67PEH_ANnMQqoXo1aotNhDkTp10cLxDw&oe=66242168" alt="">
+        </div>
+        <div class="produtosp">
+            <p>HP EliteOne 870 G9</p>
+            <p>ThinkSmart Hub 500 </p>
+            <p>MSI Modern 15</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footerimg">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/comercioinvest.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/iapmei.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="font-size: 17px;">G</a>EFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>
+    </footer>
+</body>
+<script>
+    window.onscroll = function() {stickyNav()};
+
+var nav = document.getElementById("main-nav");
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+} else {
+    nav.classList.remove("sticky");
+}
+}
+</script>
+</html>

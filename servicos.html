@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gef Guarda | Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/logobranco.png" alt="Logo GEF Guarda">
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#">POS</a>
+            <a href="#">Videovigilância</a>
+            <a href="#">Controlo de acessos</a>
+            <a href="#">Software</a>
+            <a href="#">Notícias</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="servicos">
+            <h2>Instalação de Redes</h2>
+                <div id="container">
+                    <img src="https://www.gefguarda.pt/sites/default/files/destaques/freeimageworks.com-14815441.jpg" alt="">
+                    <p>
+                        Desenvolver e implementar uma rede local não é suficiente para a plena garantia de que essa será a que mais se adequa à operacionalidade da sua atividade. A arquitetura de uma rede tem obrigatoriamente que passar por uma análise da respetiva estrutura empresarial a que se destina. Queremos a melhor solução para a implementação de uma rede estruturada e constante onde a segurança dos seus dados é prioritária e ainda tenha o melhor custo-benefício. Contamos com uma equipa técnica altamente qualificada para executar os mais diversos serviços relacionados à instalação de redes locais e remotas, atuando desde o projeto do cabeamento e passagem dos cabos até a montagem e instalação de racks, tomadas, hubs, switch e roteadores.
+                    </p>
+                </div>
+            </div>
+        <div class="servicos">
+            <h2>Consultoria</h2>
+            <div id="container">
+                <p>
+                Contamos com um grupo de profissionais altamente qualificados e certificados em cada uma das áreas de especialização na área de tecnologias de informação, dando uma orientação total ao cliente, analisando e desenhando um plano específico que cobre as necessidades do mesmo.Se necessitar de mais uma opinião profissional, no apoio às tecnologias de informação, poderá contar com o nosso melhor auxílio em consultoria, sem qualquer custo e compromisso …
+                </p>
+                <img src="https://www.gefguarda.pt/sites/default/files/destaques/g_10638.jpg" alt="">
+            </div>
+        </div>
+        <div class="servicos">
+            <h2>Software de Gestão</h2>
+            <div id="container">
+                <img src="https://www.gefguarda.pt/sites/default/files/destaques/sirket-yonetimi.jpg" alt="">
+                <p>
+                A GEFGuarda fornece um conjunto de soluções de gestão PHC e ETPOS para as empresas que precisam de responder agilmente às necessidades e complexidades próprias de cada negócio. O software PHC, por ser modular, permite adequar a implementação de soluções de gestão integradas direcionadas especificamente para cumprir o objetivo de cada empresa, operacionalizando os seus processos e regras de negócio de acordo com as necessidades dos vários intervenientes. O software ETPOS serve como suporte de faturação, sendo ele certificado, permitindo uma adaptação e formação quase instantânea dos utilizadores e proporcionando um aproveitamento de tempo e recursos para o desempenho de outras tarefas.A otimização e a operacionalização dos vários processos, permitirão o atingimento dos objetivos de controlo e apoio à tomada de decisões, uma vez que a inter-ligação entre os vários módulos destes softwares possibilita a diminuição de trabalho e por outro lado um maior rigor da informação.
+                </p>
+            </div>
+        </div>
+        <div class="servicos">
+            <h2>Assistência Técnica</h2>
+            <div id="container">
+                <p>Oferecemos suporte corporativo em informática para pequenas, médias e grandes empresas. A nossa abordagem aumenta a sua produtividade, evitando perdas de tempo dos seus funcionários com problemas de informática.
+                Proporcionamos uma total gestão em tecnologias de informação com um ambiente de serviço mais estável e o nosso suporte técnico previne problemas comuns antes que eles ocorram, poupando tempo e dinheiro.    Suporte Remoto: Para cada utilizador final é criado um acesso remoto para que possamos aceder ao seu computador pela internet. Esta resposta rápida resolve cerca de 80% das questões do utilizador.</p>
+                <img src="https://www.gefguarda.pt/sites/default/files/destaques/18573958_ml.jpg" alt="">
+            </div>
+        </div>
+        <div class="servicos">
+            <h2>Backup na Nuvem</h2>
+            <div id="container">
+                <img src="https://www.gefguarda.pt/sites/default/files/destaques/nuvem-cloud-indicca-1200x675.png" alt="">
+            
+                <p>
+                    A informação das empresas, agora predominantemente em formato digital, traz vantagens como economia de espaço e facilidade de cópia, mas também riscos significativos. Avarias de disco, quedas, desgaste, vírus e falhas elétricas são ameaças comuns. A política de backups é crucial para evitar perdas, com frequência determinada pela taxa de entrada de dados. Os backups devem ser duplicados e guardados fora do local da empresa para proteção adicional contra desastres como incêndios ou roubos. Manter múltiplas versões é essencial para recuperar ficheiros apagados por engano.
+                </p> 
+            </div>
+    </main>
+    <footer>
+        <div class="footerimg">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/comercioinvest.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/iapmei.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© GEFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>
+    </footer>
+</body>
+<script>
+    window.onscroll = function() {stickyNav()};
+
+var nav = document.getElementById("main-nav");
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+} else {
+    nav.classList.remove("sticky");
+}
+}
+</script>
+</html>

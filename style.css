@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: MontSerrat;
+}
+
+#main-header {
+    background-color: #0D8DC0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px 0;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+#main-nav {
+    text-align: center;
+    transition: top 0.3s; 
+}
+
+#main-nav a {
+    margin: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0D8DC0;
+    z-index: 1000;
+    padding: 15px 0px;
+    border-radius: 0px 0px 15px 15px; 
+}
+
+
+main {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+main h2 {
+    text-align: Center;
+    padding: 50px;
+    font-size: 40px;
+} 
+
+.banner p {
+    padding: 0px 50px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    
+}
+
+.banner img {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.produtosimg {
+    display: flex;
+    justify-content: center;
+}
+
+
+.produtosimg img {
+    max-width: 300px;
+    margin: 0px 20px;
+    
+}
+
+.produtosp {
+    display: flex;
+    justify-content: center;
+}
+
+
+.produtosp p {
+    max-width: 300px;
+    margin: 30px 110px;
+    
+}
+
+#container {
+    display: flex;
+
+}
+
+.servicos img{
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.servicos p {
+    text-align: justify;
+    text-indent: 30px;
+    align-items: center;
+    padding: 0px 30px;
+    display: flex;
+}
+
+table {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+    border-collapse: collapse;
+}
+
+table img {
+    max-width: 400px;
+    padding: 30px;
+}
+
+td {
+    
+    font-size: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+td p {
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+.prods a{
+    text-decoration: none;
+    color: black;
+    font-weight: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+
+}
+
+.prods a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-color: #0d8dc0c5;
+    color: white;
+    
+}
+
+.back{
+    display: flex;
+}
+
+
+.back a , h1 {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.back a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-color: #0d8dc0c5;
+    color: white;
+    
+}
+
+#animation td a img{
+    padding: 30px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+
+}
+
+#animation td a img:hover{
+    background-color: #0d8dc0c5;
+}
+
+.portateis table tr {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.portateis img {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.portateis table tr td p {
+    font-size: 17px;
+    align-items: center;
+    font-weight: normal;
+    text-align: left;
+}
+
+.preco {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preco h1{
+    transition-duration: 0.3s;
+    border-radius: 15px;
+}
+
+.preco h1:hover {
+    font-size: 45px;
+    background-color: #0d8dc0c5;
+    color: white ;
+}
+
+.preco p {
+    text-align: center !important;
+    margin: auto;
+}
+
+.preco p b {
+    font-weight: bolder;
+    color: #0D8DC0;
+    text-decoration: underline;
+}
+
+.point li{
+    text-align: left;
+    font-size: 17px;
+    padding-left: 20px;
+    font-weight: normal;
+    list-style-type: disc;
+}
+
+footer{
+    background-image: url(images/footer_signature.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #0D8DC0;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.footerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footerimg img{
+    padding: 30px 0px;
+    margin: 0 10px;
+    
+}
+
+footer p {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    
+}
