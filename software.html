@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gef Guarda | Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="min-height: min;">
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/logobranco.png" alt="Logo GEF Guarda">
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="pos.html">POS</a>
+            <a href="#">Videovigilância</a>
+            <a href="#">Controlo de acessos</a>
+            <a href="software.html">Software</a>
+            <a href="#">Notícias</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main style="margin: 0; max-width: 100%;">
+        
+        <div id="width">
+            <p>Temos diferentes soluções para diferentes negócios, ajudamos no sucesso e crescimento da sua empresa. Descubra <b>o PHC, o MSS e o ETPOS!</b></p>
+            <img src="software/images/phc.png" alt="">
+        </div>
+            <div class="banner">
+                <h1>PHC</h1>
+                <div id="container">
+                    <img src="https://ajtec.pt/img/icons/phc-advanced-partner-ar.png" alt="">
+                    <p>O PHC é uma solução de software de gestão integrada desenvolvida para auxiliar empresas de todos os portes e setores a otimizar seus processos, aumentar a eficiência operacional e impulsionar o crescimento sustentável. Com uma ampla gama de módulos e funcionalidades abrangentes, o PHC oferece uma abordagem holística para gerir todos os aspectos essenciais do negócio.</p>
+                </div>
+                
+            </div>
+    </main>
+    <footer>
+        <div class="footerimg">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/comercioinvest.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/iapmei.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© GEFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>
+    </footer>
+    <script>
+// Função para verificar a posição de rolagem e aplicar classe "sticky" ao <nav>
+    function stickyNav() {
+    var nav = document.getElementById("main-nav");
+    var header = document.getElementById("main-header");
+    var sticky = header.offsetHeight; // Altura do cabeçalho onde o <nav> se tornará "sticky"
+
+    if (window.pageYOffset > sticky) {
+        // Adiciona a classe "sticky" ao <nav> quando rolar além da altura do cabeçalho
+        nav.classList.add("sticky");
+
+        // Calcula a porcentagem de rolagem em relação à altura do cabeçalho
+        var scrollPercent = (window.pageYOffset - sticky) / (document.body.offsetHeight - window.innerHeight);
+
+        // Inverte a porcentagem de rolagem para obter uma transição mais rápida com menos rolagem
+        var invertedScrollPercent = 1 - scrollPercent;
+
+        // Calcula a duração da transição com base na porcentagem de rolagem invertida
+        var maxDuration = 2; // Duração máxima da transição em segundos
+        var minDuration = 0.5; // Duração mínima da transição em segundos
+        var transitionDuration = minDuration + (maxDuration - minDuration) * invertedScrollPercent;
+
+        // Limita a duração da transição entre minDuration e maxDuration
+        transitionDuration = Math.min(maxDuration, Math.max(minDuration, transitionDuration));
+
+        // Aplica a cor interpolada ao fundo do <nav> com transição de cor
+        nav.style.transition = `background-color ${transitionDuration}s ease`; // Define a transição de cor com a duração calculada
+        nav.style.backgroundColor = `rgb(${calculateColor(scrollPercent)})`;
+    } else {
+        // Remove a classe "sticky" e restaura o fundo original quando voltar ao topo da página
+        nav.classList.remove("sticky");
+        nav.style.transition = "none"; // Remove a transição ao restaurar o fundo original
+        nav.style.backgroundColor = ""; // Restaura o fundo original do <nav>
+    }
+}
+
+// Função para calcular a cor interpolada com base na porcentagem de rolagem
+function calculateColor(scrollPercent) {
+    var redValue = Math.round(13 + (255 - 13) * scrollPercent); // 13 é o valor de vermelho no código de cor azul (#0D8DC0)
+    var greenValue = Math.round(141 - 141 * scrollPercent); // 141 é o valor de verde no código de cor azul (#0D8DC0)
+    var blueValue = Math.round(192 - 192 * scrollPercent); // 192 é o valor de azul no código de cor azul (#0D8DC0)
+    return `${redValue}, ${greenValue}, ${blueValue}`;
+}
+
+// Evento de rolagem que chama a função stickyNav() quando a página é rolada
+window.onscroll = function() {
+    stickyNav();
+};
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS | Gef Guarda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="images/logobranco.png" alt="Logo GEF Guarda">
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="pos.html">POS</a>
+            <a href="#">Videovigilância</a>
+            <a href="#">Controlo de acessos</a>
+            <a href="software.html">Software</a>
+            <a href="#">Notícias</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main style="width: min-content;">
+        <div class="postext">
+            <h1>O Melhor em Produtos para POS</h1>
+            <p>
+                Na <b>GEF Guarda</b>, orgulhamo-nos de oferecer os melhores produtos para <b>POS</b> (Point of Sale) no mercado. Seja você um pequeno negócio local ou uma empresa em expansão, entendemos a importância de ter um sistema POS eficiente e confiável para atender às suas necessidades de vendas.
+            </p>
+            <p>
+                Nossa linha de produtos para <b>POS</b> abrange desde terminais de pagamento modernos e versáteis até softwares de ponto de venda intuitivos e personalizáveis. Trabalhamos com marcas líderes na indústria para garantir que você tenha acesso aos mais recentes avanços em tecnologia de transações.
+            </p>
+            <h2>Produtos</h2>
+            <p>Desde terminais portáteis para pagamentos móveis até sistemas mais robustos para estabelecimentos comerciais, oferecemos uma variedade de opções para atender às suas necessidades específicas.</p>
+        </div>
+        <table>
+            <tr>
+                <td class="prods">
+                    POS Portátil T2
+                    <img src="pos/images/posportatil.png" alt="">
+                    399,00€
+                    <p>
+                        <a href="pos/posportatil.html">Ver mais</a>
+                    </p>
+                </td>
+                <td class="prods">
+                    POS GS-T5 15"
+                    <img src="pos/images/POSGS-T-5.png" alt="">
+                    699,00€
+                    <p>
+                        <a href="pos/posgs5.html">Ver mais</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <div class="footerimg">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/comercioinvest.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/iapmei.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© GEFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>
+    </footer>
+</body>
+<script>
+    window.onscroll = function() {stickyNav()};
+
+var nav = document.getElementById("main-nav");
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+} else {
+    nav.classList.remove("sticky");
+}
+}
+</script>
+</html>
