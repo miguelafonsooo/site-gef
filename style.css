@@ -5,6 +5,11 @@
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     font-family: MontSerrat;
     overflow-x: hidden;
@@ -43,7 +48,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #0D8DC0;
+    background-color: rgb(13, 141, 192);
     z-index: 1000;
     padding: 15px 0px;
     border-radius: 0px 0px 15px 15px; 
@@ -70,6 +75,14 @@ main h2 {
     padding:30px 0px;
 }
 
+.banner {
+    padding-top: 100px;
+}
+
+.banner h1 {
+    padding-top: 50px;
+}
+
 .banner p {
     padding: 0px 50px;
     text-align: center;
@@ -78,10 +91,63 @@ main h2 {
     font-size: 20px;
     
 }
-
 .banner img {
     display: flex;
     margin: auto;
+}
+
+
+.ververmelho a, .verlaranja a, .verazul a{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+
+}
+
+
+.ververmelho a:hover, .verlaranja a:hover, .verazul a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    color: white;
+}
+
+.ververmelho a:hover{background-color: red;}
+
+.verlaranja a:hover{background-color: rgb(255, 69, 0);}
+
+.verazul a:hover{background-color: rgb(13, 141, 192);}
+
+.back , .ververmelho , .verlaranja , .verazul{
+    display: flex;
+}
+
+
+.back a ,.back h1 {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.back a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-color: #0d8dc0c5;
+    color: white;
+    
 }
 
 .produtosimg {
@@ -109,33 +175,28 @@ main h2 {
 }
 
 #container {
-    display: flex;
-    max-width: 1200px; 
+    max-width: 1200px;
+    display: flex; 
     margin: auto;
+    padding: 50px 0px;
 
 }
 
-#container img{
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 30px 0;
-    
+#container img {
+    width: 300px;
+    height: auto;
 }
 
 #container p {
-    text-align: justify;
     text-indent: 30px;
-    padding:0 30px;
-    display: flex;
+    padding: 30px;
     align-items: center;
     
 }
 
 #width p {
-    font-size: 28px;
-    padding: 200px;
+    font-size: 30px;
+    padding: 20vh 100px;
     text-align: center;
 }
 
@@ -190,30 +251,7 @@ td p {
     
 }
 
-.back{
-    display: flex;
-}
 
-
-.back a ,.back h1 {
-    display: flex;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    margin: auto;
-    padding-bottom: 30px;
-    padding: 5px 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-
-.back a:hover{
-    transition-duration: 0.5s;
-    text-decoration: underline;
-    background-color: #0d8dc0c5;
-    color: white;
-    
-}
 
 #animation td a img{
     padding: 30px;

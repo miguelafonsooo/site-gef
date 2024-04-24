@@ -6,7 +6,7 @@
     <title>Gef Guarda | Produtos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="min-height: min;">
+<body>
     <header id="main-header">
         <div class="logo">
             <img src="images/logobranco.png" alt="Logo GEF Guarda">
@@ -27,8 +27,10 @@
     <main style="margin: 0; max-width: 100%;">
         
         <div id="width">
-            <p>Temos diferentes soluções para diferentes negócios, ajudamos no sucesso e crescimento da sua empresa. Descubra <b>o PHC, o MSS e o ETPOS!</b></p>
-            <img src="software/images/phc.png" alt="">
+            <p>Temos diferentes soluções para diferentes negócios, ajudamos no sucesso e crescimento da sua empresa. Descubra <b>o PHC, o ETPOS e o MSS!</b></p>
+            <a href="software/phc.html">
+                <img src="software/images/phc.png" alt="">
+            </a>
         </div>
             <div class="banner">
                 <h1>PHC</h1>
@@ -38,6 +40,38 @@
                 </div>
                 
             </div>
+            <div class="ververmelho">
+                <a href="software/phc.html">Ver Mais</a>
+            </div>
+            <div id="width">
+                <a href="software/etpos.html">
+                    <img src="software/images/etpos.png" alt="">
+                </a>
+                </div>
+            <div class="banner">
+                <h1>ETPOS</h1>
+                    <div id="container">
+                            <p>O Etpos é a plataforma líder em gestão de pontos de venda, oferecendo soluções completas para negócios de todos os tamanhos. Nosso sistema inovador simplifica e otimiza operações de varejo, fornecendo ferramentas poderosas para gerenciar estoques, vendas, e clientes de forma eficiente.</p>
+                            <img src="https://www.conjugaprisma.pt/wp-content/uploads/2022/04/logo-ETPos-small.png" alt="">
+                </div>
+            </div>
+            <div class="verlaranja">
+                <a href="software/phc.html">Ver Mais</a>
+            </div>
+            <div id="width">
+                <a href="software/mss-mobile-files-system.html">
+                    <img src="software/images/mss.png" alt="">
+                </a>
+            </div>
+            <div class="banner">
+                <h1>MSS</h1>
+                <div id="container">
+                    <p>O MSS Software é uma forma de mobilidade para Pré-venda e Autovenda, desenvolvida para terminais móveis que possibilita às Equipas de Vendas e de Serviços Técnicos todas as ferramentas necessárias para executarem o seu trabalho na perfeição, aumentando a produtividade e eficácia. Contacte-nos e veja a facilidade de utilização deste MSS.</p>
+                </div>
+            </div>
+        <div class="verazul">
+            <a href="software/phc.html">Ver Mais</a>
+        </div>
     </main>
     <footer>
         <div class="footerimg">
@@ -46,57 +80,22 @@
             <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
         </div>
         <p>© GEFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
-        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="#">Livro de Reclamações</a>        
     </footer>
-    <script>
-// Função para verificar a posição de rolagem e aplicar classe "sticky" ao <nav>
-    function stickyNav() {
-    var nav = document.getElementById("main-nav");
+<!--<script>
+        // Função para alterar a cor do cabeçalho para vermelho após 0.5 segundos
+function changeHeaderColor() {
     var header = document.getElementById("main-header");
-    var sticky = header.offsetHeight; // Altura do cabeçalho onde o <nav> se tornará "sticky"
-
-    if (window.pageYOffset > sticky) {
-        // Adiciona a classe "sticky" ao <nav> quando rolar além da altura do cabeçalho
-        nav.classList.add("sticky");
-
-        // Calcula a porcentagem de rolagem em relação à altura do cabeçalho
-        var scrollPercent = (window.pageYOffset - sticky) / (document.body.offsetHeight - window.innerHeight);
-
-        // Inverte a porcentagem de rolagem para obter uma transição mais rápida com menos rolagem
-        var invertedScrollPercent = 1 - scrollPercent;
-
-        // Calcula a duração da transição com base na porcentagem de rolagem invertida
-        var maxDuration = 2; // Duração máxima da transição em segundos
-        var minDuration = 0.5; // Duração mínima da transição em segundos
-        var transitionDuration = minDuration + (maxDuration - minDuration) * invertedScrollPercent;
-
-        // Limita a duração da transição entre minDuration e maxDuration
-        transitionDuration = Math.min(maxDuration, Math.max(minDuration, transitionDuration));
-
-        // Aplica a cor interpolada ao fundo do <nav> com transição de cor
-        nav.style.transition = `background-color ${transitionDuration}s ease`; // Define a transição de cor com a duração calculada
-        nav.style.backgroundColor = `rgb(${calculateColor(scrollPercent)})`;
-    } else {
-        // Remove a classe "sticky" e restaura o fundo original quando voltar ao topo da página
-        nav.classList.remove("sticky");
-        nav.style.transition = "none"; // Remove a transição ao restaurar o fundo original
-        nav.style.backgroundColor = ""; // Restaura o fundo original do <nav>
-    }
+    header.style.transition = "background-color 1.3s ease";
+    header.style.backgroundColor = "red";
 }
 
-// Função para calcular a cor interpolada com base na porcentagem de rolagem
-function calculateColor(scrollPercent) {
-    var redValue = Math.round(13 + (255 - 13) * scrollPercent); // 13 é o valor de vermelho no código de cor azul (#0D8DC0)
-    var greenValue = Math.round(141 - 141 * scrollPercent); // 141 é o valor de verde no código de cor azul (#0D8DC0)
-    var blueValue = Math.round(192 - 192 * scrollPercent); // 192 é o valor de azul no código de cor azul (#0D8DC0)
-    return `${redValue}, ${greenValue}, ${blueValue}`;
-}
-
-// Evento de rolagem que chama a função stickyNav() quando a página é rolada
-window.onscroll = function() {
-    stickyNav();
+// Chamando a função após um pequeno atraso (500 milissegundos ou 0.5 segundos) após o carregamento da página
+window.onload = function() {
+    setTimeout(changeHeaderColor, 300); // 500 milissegundos = 0.5 segundos
 };
-
-    </script>
+    </script> !-->
+     <script src="movingimage.js"></script>
+    <script src="headercolor.js"></script>
 </body>
 </html>
