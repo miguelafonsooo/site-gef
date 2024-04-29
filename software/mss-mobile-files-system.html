@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS | Gef Guarda</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="../images/logobranco.png" alt="Logo GEF Guarda">
+        </div>
+        <nav id="main-nav">
+            <a href="../index.html">Home</a>
+            <a href="../servicos.html">Serviços</a>
+            <a href="../produtos.html">Produtos</a>
+            <a href="../pos.html">POS</a>
+            <a href="#">Videovigilância</a>
+            <a href="#">Controlo de acessos</a>
+            <a href="../software.html">Software</a>
+            <a href="#">Notícias</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </header>
+    <main style="width: max-content; height: 70vh;">
+        <div class="servicos">
+            <h1>SYSDEV</h1>
+            <div id="container">
+                <p>
+                    <b>MSS – Software de mobilidade para Pré-venda e Autovenda</b>, desenvolvida para terminais móveis que possibilita às Equipas de Vendas e de Serviços Técnicos todas as ferramentas necessárias para executarem o seu trabalho na perfeição, aumentando a produtividade e eficácia. Contacte-nos e veja a facilidade de utilização deste MSS.
+                </p>
+                <img src="images/mss2.png" alt="">
+            </div>
+        </div>
+        <div class="back"><a href="../software.html">Voltar Atrás</a></div>
+    </main>
+    <footer>
+        <div class="footerimg">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/comercioinvest.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/iapmei.png" alt="">
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© GEFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
+        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" target="_blank">Livro de Reclamações</a>
+    </footer>
+</body>
+<script>
+    window.onscroll = function() {stickyNav()};
+
+var nav = document.getElementById("main-nav");
+var sticky = nav.offsetTop;
+
+function stickyNav() {
+if (window.pageYOffset > sticky) {
+    nav.classList.add("sticky");
+} else {
+    nav.classList.remove("sticky");
+}
+}
+</script>
+</html>

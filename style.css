@@ -121,7 +121,7 @@ main h2 {
 
 .ververmelho a:hover{background-color: red;}
 
-.verlaranja a:hover{background-color: rgb(255, 69, 0);}
+.verlaranja a:hover{background-color: rgb(244, 121, 32);}
 
 .verazul a:hover{background-color: rgb(13, 141, 192);}
 
@@ -142,6 +142,10 @@ main h2 {
     margin-bottom: 30px;
 }
 
+.back a{
+    font-size: 20px;
+}
+
 .back a:hover{
     transition-duration: 0.5s;
     text-decoration: underline;
@@ -149,6 +153,12 @@ main h2 {
     color: white;
     
 }
+
+.servicos {
+    font-size: 20px;
+}
+
+
 
 .produtosimg {
     display: flex;
@@ -183,11 +193,12 @@ main h2 {
 }
 
 #container img {
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 
 #container p {
+    display: block;
     text-indent: 30px;
     padding: 30px;
     align-items: center;
