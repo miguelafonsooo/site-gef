@@ -1,32 +1,32 @@
-function stickyNav() {
+function handleHeaderColor() {
     var nav = document.getElementById("main-nav");
     var header = document.getElementById("main-header");
-    var sticky = header.offsetHeight;
+    var submenus = document.querySelectorAll(".submenu");
 
-    if (window.pageYOffset > sticky) {
+    var threshold = header.offsetHeight * 0.5;
+
+    if (window.pageYOffset > threshold) {
         nav.classList.add("sticky");
-        nav.style.backgroundColor = getBackgroundColor(window.pageYOffset);
     } else {
         nav.classList.remove("sticky");
-        nav.style.backgroundColor = "";
     }
-}
 
-function getBackgroundColor(scrollPosition) {
-    var header = document.getElementById("main-header");
-    var sticky = header.offsetHeight;
-    var maxScroll = document.body.offsetHeight - window.innerHeight;
-    var scrollPercent = (scrollPosition - sticky) / (maxScroll - sticky);
+    var scrollPercent = (window.pageYOffset - threshold) / (document.body.offsetHeight - window.innerHeight - threshold);
+
     var colors = [
-        [13, 141, 192],
-        [255, 0, 0],
-        [255, 0, 0],
-        [244, 121, 32],
-        [244, 121, 32],
-        [13, 141, 192]
+        [13, 141, 192], 
+        [255, 0, 0],    
+        [244, 121, 32], 
+        [13, 141, 192] 
     ];
+
     var interpolatedColor = interpolateColor(colors, scrollPercent);
-    return `rgb(${interpolatedColor.join(',')})`;
+
+    nav.style.backgroundColor = `rgb(${interpolatedColor.join(',')})`;
+
+    submenus.forEach(function(submenu) {
+        submenu.style.backgroundColor = `rgb(${interpolatedColor.join(',')})`;
+    });
 }
 
 function interpolateColor(colors, progress) {
@@ -38,13 +38,15 @@ function interpolateColor(colors, progress) {
     var colorEnd = colors[endColorIndex];
     var stepProgress = colorIndex - startColorIndex;
     var interpolatedColor = [];
+
     for (var i = 0; i < 3; i++) {
         var component = Math.round(colorStart[i] + (colorEnd[i] - colorStart[i]) * stepProgress);
         interpolatedColor.push(component);
     }
+
     return interpolatedColor;
 }
 
 window.onscroll = function() {
-    stickyNav();
+    handleHeaderColor();
 };

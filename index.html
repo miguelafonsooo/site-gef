@@ -9,21 +9,44 @@
 <body>
     <header id="main-header">
         <div class="logo">
-            <a href="index.html"><img src="images/logobranco.png" alt="Logo GEF Guarda"><a>
+            <a href="index.html"><img src="images/logobranco.png" alt="Logo GEF Guarda"></a>
         </div>
         <nav id="main-nav">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="servicos.html">Serviços</a>
-            <a href="produtos.html">Produtos</a>
+            <div class="dropdown">
+                <a href="produtos.html">Produtos</a>
+                <div class="submenu">
+                    <a href="/produtos/portateis.html">Portáteis</a>
+                    <a href="/produtos/monitores.html">Monitores</a>
+                    <a href="/produtos/computadores.html">Computadores</a>
+                    <a href="/produtos/impressoras.html">Impressoras</a>
+                    <a href="/produtos/software.html">Software de Segurança</a>
+                    <a href="/produtos/projetores.html">Projetores e Câmaras</a>
+                    <a href="/produtos/servidor.html">Servidores</a>
+                    <a href="/produtos/softwareaplicacional.html">Software Aplicacional</a>
+                </div>
+            </div>
             <a href="pos.html">POS</a>
             <a href="#">Videovigilância</a>
             <a href="#">Controlo de acessos</a>
-            <a href="software.html">Software</a>
+            <div class="dropdown">
+                <a href="software.html">Software</a>
+                <div class="submenu">
+                    <a href="software/phc.html">PHC</a>
+                    <a href="pos.html">POS</a>
+                    <a href="software/mss-mobile-files-system.html">MSS</a>
+                </div>
+            </div>
             <a href="noticias.html">Notícias</a>
-            
             <a href="contactos.html">Contactos</a>
         </nav>
     </header>
+    
+    
+    
+    
+    
     <main>
         <h1>Bem Vindo</h1>
         <div class="banner">
@@ -35,16 +58,26 @@
             <a href="servicos.html"><img src="images/hpbanner.png" alt=""></a>
         </div>
         <h1>Produtos</h1>
-        <div class="produtosimg">
-            <img src="https://scontent.flis11-2.fna.fbcdn.net/v/t39.30808-6/436766739_889230379881274_3163358934886230977_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RXI6zkDkEKkAb7W1vBa&_nc_ht=scontent.flis11-2.fna&oh=00_AfCMQR6nVLTNe1RpfhASUvgbI7PPGZexY76GJbVhFuwagw&oe=66241655" alt="">
-            <img src="https://scontent.flis11-2.fna.fbcdn.net/v/t39.30808-6/420357551_887705670033745_3369046395730799714_n.jpg?stp=dst-jpg_p180x540&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pzx2c5vkl3sAb4K3y2W&_nc_ht=scontent.flis11-2.fna&oh=00_AfCGb_UHSh6u7k5KM3hV-Wmsf838Ew5InH1rJmgVPudpCA&oe=66242195" alt="">
-            <img src="https://scontent.flis11-1.fna.fbcdn.net/v/t39.30808-6/335509900_1850755455295465_3356173265171351304_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JVVN41SAm3UAb4MRXOX&_nc_ht=scontent.flis11-1.fna&oh=00_AfDhowxnLQxElo67PEH_ANnMQqoXo1aotNhDkTp10cLxDw&oe=66242168" alt="">
-        </div>
-        <div class="produtosp">
-            <p>HP EliteOne 870 G9</p>
-            <p>ThinkSmart Hub 500 </p>
-            <p>MSI Modern 15</p>
-        </div>
+        <table>
+            <tr>
+                <td class="prods">
+                    POS Portátil T2
+                    <img src="pos/images/posportatil.png" alt="">
+                    399,00€
+                    <p>
+                        <a href="pos/posportatil.html">Ver mais</a>
+                    </p>
+                </td>
+                <td class="prods">
+                    Surface Pro 5 (Recondicionado)
+                    <img src="produtos/images/portateis/Surface.jpg" alt="">
+                    519,00€
+                    <p>
+                        <a href="/produtos/portateis/surface.html">Ver mais</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
     </main>
     <footer>
         <div class="footerimg">
@@ -52,7 +85,7 @@
             <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
         </div>
         <p>© <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="font-size: 17px;">G</a>EFGuarda - Serviços Gestão Informatica e Telecomunicações Lda Guarda - Sé</p>
-        <a href="#">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" target="_blank">Livro de Reclamações</a>
+        <a href="#">Política de Privacidade |</a>  <a href="cookies.html">Política de Cookies |</a>  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" target="_blank">Livro de Reclamações</a>
     </footer>
 </body>
 <script>

@@ -23,7 +23,6 @@ body {
 
 #main-nav {
     text-align: center;
-    transition: top 0.3s; 
 }
 
 #main-nav a {
@@ -32,7 +31,43 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
 }
+
+.submenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0D8DC0; /* Cor inicial de fundo do submenu */
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transições suaves */
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/* Manter o submenu visível enquanto o mouse estiver sobre ele */
+.submenu:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .logo {
     text-align: center;
@@ -159,30 +194,6 @@ main h2 {
 }
 
 
-
-.produtosimg {
-    display: flex;
-    justify-content: center;
-}
-
-
-.produtosimg img {
-    max-width: 300px;
-    margin: 0px 20px;
-    
-}
-
-.produtosp {
-    display: flex;
-    justify-content: center;
-}
-
-
-.produtosp p {
-    max-width: 300px;
-    margin: 30px 110px;
-    
-}
 
 #container {
     max-width: 1200px;
@@ -341,7 +352,15 @@ td p {
     font-size: 18px;
 }
 
-/******************Noticias*******************/
+/*******************Cookies*********************/
+
+.cookies p {
+    padding: 5px;
+}
+
+.cookies h3 {
+    padding: 5px;
+}
 
 footer{
     background-image: url(images/footer_signature.png);
