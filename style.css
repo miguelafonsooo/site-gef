@@ -40,13 +40,13 @@ body {
     top: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
-    background-color: #0D8DC0; /* Cor inicial de fundo do submenu */
+    background-color: #0D8DC0; 
     border-radius: 0px 0px 15px 15px;
     padding: 10px;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transições suaves */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown:hover .submenu {
@@ -61,8 +61,6 @@ body {
 }
 
 
-
-/* Manter o submenu visível enquanto o mouse estiver sobre ele */
 .submenu:hover {
     opacity: 1;
     visibility: visible;
@@ -362,6 +360,23 @@ td p {
     padding: 5px;
 }
 
+/****************Privacidade*******************/
+
+.privacidade p{
+    padding: 5px;
+}
+
+.privacidade h3 {
+    padding: 5px;
+}
+
+.privacidade h4 {
+    padding: 5px;
+}
+
+
+
+/****************footer**************************/
 footer{
     background-image: url(images/footer_signature.png);
     background-size: contain;
