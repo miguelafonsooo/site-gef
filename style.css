@@ -490,18 +490,27 @@ footer a {
         margin-bottom: 10px;
     }
 
+    .sticky {
+        display: none;
+    }
+    main h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    header {
+        width: 100%;    
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    td {
+        padding: 30px 0;
+    }
+
 }
 
-        /* Esconder elementos não essenciais */
-        .sticky {
-            display: none;
-        }
-        main h2 {
-            font-size: 24px;
-            padding: 20px 0;
-        }
+        
 
-        header {
-            width: 100%;    
-        }
-}
