@@ -485,6 +485,10 @@ footer a {
         margin-top: 0;
     }
 
+    .portateis table {
+        max-width: 85%;
+    }
+
     .portateis table tr {
         display: block;
         margin-bottom: 20px;
@@ -530,6 +534,7 @@ footer a {
     }
 
     td iframe {
+        width: 100%;
         padding-top: 10px;
     }
 
@@ -550,7 +555,7 @@ footer a {
         height: auto;
     }
 
-    
+
 }
 
         
