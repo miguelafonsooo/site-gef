@@ -255,7 +255,11 @@ td p {
     padding-top: 7px;
 }
 
-
+td iframe {
+    padding-top: 100px;
+    width: 500px;
+    height: 400px;
+}
 
 .prods a img{
     text-decoration: none;
@@ -291,9 +295,14 @@ td p {
 }
 
 .portateis table tr td p {
-    font-size: 17px;
+    font-size: 18px;
     align-items: center;
     font-weight: normal;
+    text-align: left;
+}
+
+.portateis table tr td li {
+    font-size: 18px;
     text-align: left;
 }
 
@@ -520,6 +529,9 @@ footer a {
         padding: 30px 0;
     }
 
+    td iframe {
+        padding-top: 10px;
+    }
 }
 
         
