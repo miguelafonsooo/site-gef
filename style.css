@@ -177,7 +177,7 @@ main h2 {
 }
 
 .back a{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .back a:hover{
@@ -255,7 +255,9 @@ td p {
     padding-top: 7px;
 }
 
-.prods a{
+
+
+.prods a img{
     text-decoration: none;
     color: black;
     font-weight: none;
@@ -264,7 +266,7 @@ td p {
 
 }
 
-.prods a:hover{
+.prods a:hover img:hover{
     transition-duration: 0.5s;
     text-decoration: underline;
     background-color: #0d8dc0c5;
@@ -273,17 +275,6 @@ td p {
 }
 
 
-
-#animation td a img{
-    padding: 30px;
-    border-radius: 15px;
-    transition-duration: 0.5s;
-
-}
-
-#animation td a img:hover{
-    background-color: #0d8dc0c5;
-}
 
 .portateis table tr {
     display: flex;
@@ -483,25 +474,7 @@ footer a {
         margin-top: 0;
     }
 
-    #animation td a img {
-        padding: 0px;
-    }
 
-    #animation td {
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    #animation img {
-        margin: auto;
-        margin-bottom: 0;
-    }
-
-    #animation a {
-        display: block;
-        margin-bottom: 10px;
-    }
 
     .sticky {
         display: none;
