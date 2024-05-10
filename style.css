@@ -11,6 +11,7 @@ a {
 }
 
 body {
+    width: auto;
     font-family: MontSerrat;
     overflow-x: hidden;
 }
@@ -378,6 +379,7 @@ td p {
 
 /****************footer**************************/
 footer{
+    width: 100%;
     background-image: url(images/footer_signature.png);
     background-size: contain;
     background-position: right;
@@ -423,6 +425,8 @@ footer a {
     /* Exemplos de estilos para telémoveis */
     
     /* Ajustar tamanhos de texto */
+
+    
     main h1 {
         font-size: 30px;
     }
@@ -461,6 +465,10 @@ footer a {
         width: 100%;
     }
 
+    table {
+        margin: auto;
+    }
+
     .prods {
         display: block;
         margin-bottom: 20px;
@@ -475,6 +483,10 @@ footer a {
         margin-top: 0;
     }
 
+    #animation td a img {
+        padding: 0px;
+    }
+
     #animation td {
         display: block;
         text-align: center;
@@ -482,6 +494,7 @@ footer a {
     }
 
     #animation img {
+        margin: auto;
         margin-bottom: 0;
     }
 
