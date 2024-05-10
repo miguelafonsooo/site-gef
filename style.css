@@ -475,6 +475,23 @@ footer a {
         margin-top: 0;
     }
 
+    #animation td {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #animation img {
+        margin-bottom: 0;
+    }
+
+    #animation a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
         /* Esconder elementos não essenciais */
         .sticky {
             display: none;
