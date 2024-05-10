@@ -367,11 +367,6 @@ td p {
     height: 600px;
 }
 
-
-
-
-
-
 /*******************Cookies*********************/
 
 .cookies p {
@@ -576,6 +571,10 @@ footer a {
         height: auto;
     }
 
+
+    #width p {
+        padding: 300px 0 ;
+    }
 
 }
 
