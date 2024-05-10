@@ -532,6 +532,25 @@ footer a {
     td iframe {
         padding-top: 10px;
     }
+
+    #width img {
+        display: none;
+    }
+
+    .banner {
+        padding: 0px;
+    }
+
+    .banner h1 {
+        padding: 0px;
+    }
+
+    .banner #container img {
+        width: 300px;
+        height: auto;
+    }
+
+    
 }
 
         
