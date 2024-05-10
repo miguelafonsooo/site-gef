@@ -462,20 +462,42 @@ footer a {
         margin: auto;
     }
 
-    .prods {
+    .prods{
         display: block;
         margin-bottom: 20px;
     }
 
-    .prods img {
+    .prods img{
         max-width: 300px;
         margin-bottom: 0;
     }
 
-    .prods p {
+    .prods p{
         margin-top: 0;
     }
 
+    .portateis table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .portateis table tr td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; /* Considerar padding e borda na largura total */
+        padding: 10px;
+    }
+
+    .portateis img {
+        width: auto;
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .portateis table tr td p {
+        font-size: 17px;
+        margin-bottom: 10px; 
+    }
 
 
     .sticky {
