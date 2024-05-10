@@ -248,14 +248,16 @@ td {
     text-align: center;
     vertical-align: bottom;
     font-weight: bold;
+
 }
+
 
 td p {
     font-size: 15px;
     padding-top: 7px;
 }
 
-td iframe {
+.portateis td iframe {
     padding-top: 100px;
     width: 500px;
     height: 400px;
@@ -350,6 +352,25 @@ td iframe {
     text-align: center;
     font-size: 18px;
 }
+
+/*****************Noticias******************/
+
+.iframe-container {
+    
+}
+
+.noticias  iframe {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    height: 600px;
+}
+
+
+
+
+
 
 /*******************Cookies*********************/
 
