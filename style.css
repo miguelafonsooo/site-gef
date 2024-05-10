@@ -367,11 +367,11 @@ td p {
 }
 
 .privacidade h3 {
-    padding: 5px;
+    padding: 15px;
 }
 
 .privacidade h4 {
-    padding: 5px;
+    padding: 10px;
 }
 
 
@@ -416,4 +416,62 @@ footer a {
     color: white;
     font-size: 12px;
 
+}
+
+@media only screen and (max-width: 768px)
+{
+    /* Exemplos de estilos para telémoveis */
+    
+    /* Ajustar tamanhos de texto */
+    main h1 {
+        font-size: 30px;
+    }
+    
+    /* Ajustar a largura das imagens */
+    #container img {
+        width: 100%;
+    }
+    
+    /* Modificar estilos de navegação */
+    #main-nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    /* Esconder elementos menos importantes */
+    .submenu {
+        display: none; /* ou outra adaptação adequada */
+    }
+
+    .back, .ververmelho, .verlaranja, .verazul {
+        flex-direction: column;
+    }
+    
+    /* Centralizar imagens ou conteúdo */
+    .banner img {
+        margin: auto;
+        width: 100%;
+    }
+
+    .prods {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .prods img {
+        margin-bottom: 0;
+    }
+
+    .prods p {
+        margin-top: 0;
+    }
+
+        /* Esconder elementos não essenciais */
+        .sticky {
+            display: none;
+        }
+        main h2 {
+            font-size: 24px;
+            padding: 20px 0;
+        }
 }
