@@ -209,7 +209,7 @@ main h2 {
 
 #container p {
     display: block;
-    text-indent: 30px;
+    
     padding: 30px;
     align-items: center;
     
@@ -257,9 +257,18 @@ td p {
     padding-top: 7px;
 }
 
-.portateis td iframe {
-    padding-top: 100px;
-    width: 500px;
+
+.portateis #container p {
+    font-size: large;
+}
+
+
+#container iframe {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 30px;
+    width: 80%;
     height: 400px;
 }
 
