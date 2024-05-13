@@ -109,16 +109,9 @@ main h2 {
     padding:30px 0px;
 }
 
-.banner {
-    padding-top: 100px;
-}
 
-.banner h1 {
-    padding-top: 50px;
-}
-
-.banner p {
-    padding: 0px 50px;
+.banner p { 
+    padding: 30px 50px;
     text-align: center;
     align-items: center;
     margin: auto;
@@ -487,6 +480,7 @@ footer a {
     .banner img {
         margin: auto;
         width: 100%;
+        height: 250px;
     }
 
     table {
@@ -572,6 +566,9 @@ footer a {
         padding: 0px;
     }
 
+    .banner p {
+        padding-bottom: 30px;
+    }
     .banner #container img {
         width: 300px;
         height: auto;
