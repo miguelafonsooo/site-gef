@@ -504,9 +504,7 @@ footer a {
         flex-direction: column;
     }
     
-    #verticalAnchor {
-        display: none;
-    }
+
 
     /* Centralizar imagens ou conteúdo */
     .banner img {
