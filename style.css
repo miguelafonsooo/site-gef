@@ -38,6 +38,11 @@ body {
     font-weight: bold;
     position: relative;
     display: inline-block;
+    transition-duration: 0.3s;
+}
+
+#main-nav a:hover {
+    color: rgb(230, 230, 230);
 }
 
 #verticalAnchor {
