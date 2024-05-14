@@ -316,6 +316,12 @@ td p {
 }
 
 
+.portateis table td h2 {
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
 
 .portateis table tr {
     display: flex;
