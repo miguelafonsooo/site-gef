@@ -504,11 +504,15 @@ footer a {
         flex-direction: column;
     }
     
+    #verticalAnchor {
+        display: none;
+    }
+
     /* Centralizar imagens ou conteúdo */
     .banner img {
-        margin: auto;
+        
         width: 100%;
-        height: 250px;
+        height: 100%;
     }
 
     table {
