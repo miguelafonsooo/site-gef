@@ -488,6 +488,7 @@ footer a {
     }
     
     #container {
+        padding: 0px;
         display: block;
     }
 
@@ -497,6 +498,7 @@ footer a {
         height: 100%;
     }
     #container p {
+
         display: block;
     }
     
