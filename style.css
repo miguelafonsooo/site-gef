@@ -278,20 +278,22 @@ td {
 }
 
 .subsubmenu {
-    opacity: 0; /* Alterado de display: none; para opacity: 0; */
+    opacity: 0;
     position: absolute;
     top: -289%;
     left: 100%;
     background-color: #0D8DC0;
     padding: 10px;
     transition: opacity 0.3s ease;
-    border-radius: 0px 15px 15px 0px; /* Adicionando a transição para a opacidade */
+    border-radius: 0px 15px 15px 0px; 
 }
 
 .dropdown .has-submenu:hover + .subsubmenu,
 .subsubmenu:hover {
     opacity: 1;
 }
+
+
 td p {
     font-size: 15px;
     padding-top: 7px;
