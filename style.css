@@ -318,7 +318,7 @@ td p {
     text-align: center;
 }
 
-.prods a img{
+#animation tr td a img{
     text-decoration: none;
     color: black;
     font-weight: none;
@@ -327,7 +327,7 @@ td p {
 
 }
 
-.prods a:hover img:hover{
+#animation tr td a:hover img:hover{
     transition-duration: 0.5s;
     text-decoration: underline;
     background-color: #0d8dc0c5;
