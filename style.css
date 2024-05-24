@@ -199,31 +199,6 @@ body {
     background-color: #1176AB;
 }
 
-#verticalAnchor {
-    font-weight: bold;
-    font-weight: bold;
-    position: fixed;
-    right: 0px; /* Distância da borda direita da página */
-    writing-mode: vertical-lr; /* Escreve o texto na vertical, da esquerda para a direita */
-    text-align: center; /* Centraliza o texto na âncora */
-    text-decoration: none;
-    background-color: #1176AB;
-    color: white;
-    padding:  25px 10px 20px 10px;
-    border-top-left-radius: 5px; /* Arredonda o canto superior esquerdo */
-    border-bottom-left-radius: 5px; /* Arredonda o canto inferior esquerdo */
-    white-space: nowrap;
-    font-size: 16px;  /* Evita que o texto quebre em várias linhas */
-    z-index: 999;
-    transition-duration: 0.3s;
-    box-shadow: 6px 14px 20px 7px rgba(0, 0, 0, 0.103);
-}
-
-#verticalAnchor:hover {
-    color: white;
-    background-color: #00b7ff;
-}
-
 .scroll-header .logo img {
     transition: src 0.3s ease; /* Adicionar uma transição suave à troca de imagem */
 }
