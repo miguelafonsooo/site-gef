@@ -866,7 +866,7 @@ footer a {
     .checkmark span {
         width: 32px;
         height: 2px;
-        background-color: white;
+        background-color: #ffffff;
         position: absolute;
         transition: all 0.3s ease-in-out;
     }
