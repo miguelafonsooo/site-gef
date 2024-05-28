@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="PT-PT">
+<html lang="pt-pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gef Guarda</title>
+    <title>GEF Guarda</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    
 </head>
 <body>
     <header id="main-header">
@@ -16,8 +15,8 @@
                     <img src="images/logobranco.png" alt="Logo Azul" id="logo-img">
                 </a>
             </div>
+            
             <div class="left">
-                
                 <a href="servicos.html">Serviços</a>
                 <div class="dropdown">
                     <a href="produtos.html">Produtos<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></a>
@@ -50,61 +49,113 @@
                     </div>
                 </div>
                 <a href="noticias.html">Notícias</a>
-                <div class="contactos"><a href="contactos.html">Contactos</a></div>
             </div>
             <div class="right">
                 <a href="contactos.html"><button class="button2">Contactos</button></a>
                 <a href="https://api.us0.swi-rc.com/integration/integration.php?uid=ozxewGqfHFcOqzMTr%2BqzXY01dW%2BSdk8myvHcRqdEa0lTw8QFWlwjGTxqF5VB4XIyA5g2C7LdAKNVhsgOsjc%2FclIZtvbTAc2TIA%3D%3D">
                     <button class="button3" onmouseover="changeImage(true)" onmouseout="changeImage(false)">Assistência <img id="imgButton" src="images/download_preto.png"></button>
-                </a> 
+                </a>
+                <div class="space"></div>
+                <label class="barra">
+                    <input type="checkbox">
+                    <div class="checkmark">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </label> 
             </div>
         </nav>
     </header>
-    <script src="header.js"></script>
-    <script src="js/download/download1.js"></script>
-    <main>
-        <h1>Bem Vindo</h1>
-        <div class="banner">
-            <p>Bem vindos, somos a GEF Guarda.
-                Somos uma empresa prestadora de serviços e fornecedora de soluções globais na área dos sistemas de informação.
-                Estejam á vontade para ver os nossos produtos e contactem-nos em caso de necessidade.
-            </p>
-            <h1>Serviços</h1>
-            <a href="servicos.html"><img src="images/hpbanner.png" alt=""></a>
-            <h1>Software</h1>
-            <a href="software.html"><img src="images/software.png" alt=""></a>
-        <h1>Produtos</h1>
-        <table>
-            <tr>
-                <td class="prods">
-                    Samsung S34A650
-                    <img src="produtos/images/monitores/samsung.jpg" alt="">
-                    519,00€
-                    <p>
-                        <a href="produtos/monitores/samsung.html">Ver mais</a>
-                    </p>
-                </td>
-                <td class="prods">
-                    Surface Pro 5 (Recondicionado)
-                    <img src="produtos/images/portateis/Surface.jpg" alt="">
-                    519,00€
-                    <p>
-                        <a href="produtos/portateis/surface.html">Ver mais</a>
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <div class="back"><a href="produtos.html">Veja mais produtos</a></div>
+    <main style="max-width: none;">
+        <div id="frontpage">
+            <section id="section1">
+                <div class="text-left">
+                    <h1>Bem-vindos à GEF Guarda!</h1>
+                    <p>Somos uma empresa especializada em fornecer serviços e soluções globais na área de sistemas de informação.</p>
+                    <p>Fiquem à vontade para explorar nossos produtos e entrem em contato conosco sempre que precisarem.</p>
+                    <a href="contactos.html">
+                        <h2>Estamos à disposição para ajudar!</h2>
+                    </a>
+                </div>
+                <img src="images/backgroundimage.png" alt="">
+            </section>
+        </div>
+        <section id="section2">
+            <div class="text-right">
+                <h1>O que Fazemos</h1>
+                <a href="servicos.html"><img src="images/hpbanner.png" alt=""></a>
+            </div>
+        </section>
+        <section id="section3">
+            <h1>Os Nossos Produtos</h1>
+            <table>
+                <tr>
+                    <td class="prods">
+                        Samsung S34A650
+                        <a href="produtos/monitores/samsung.html"></a>
+                        <img src="produtos/images/monitores/samsung.jpg" alt="">
+                        519,00€
+                        <p>
+                            Ver mais</a>
+                        </p>
+                    </td>
+                    <td class="prods">
+                        Surface Pro 5 (Recondicionado)
+                        <a href="produtos/portateis/surface.html"></a>
+                        <img src="produtos/images/portateis/Surface.jpg" alt="">
+                        519,00€
+                        <p>
+                            Ver mais</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <div class="back"><a href="produtos.html">Veja mais produtos</a></div>
+        </section>
     </main>
     <footer>
         <div class="footerimg">
             
             <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
         </div>
-        <p>© <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="font-size: 17px;">G</a>EFGuarda - Serviços Gestão Informática e Telecomunicações Lda Guarda - Sé</p>
+        <p>© G</a>EFGuarda - Serviços Gestão Informática e Telecomunicações Lda Guarda - Sé</p>
         <a href="../../privacidade.html">Política de Privacidade |</a>  <a href="cookies.html">Política de Cookies |</a>  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" target="_blank">Livro de Reclamações</a>
+        <ul class="wrapper">
+            <a href="https://www.facebook.com/p/GEFGuarda-Lda-100063829591952/?_rdr" target="_blank">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <svg
+                    viewBox="0 0 320 512"
+                    height="1.2em"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    ></path>
+                  </svg>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/gefguarda/" target="_blank">
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.2em"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    ></path>
+                  </svg>
+                </li>
+            </a>
+          </ul>
     </footer>
     <script src="header.js"></script>
-    <script src="js/download/download1.js"></script>
+    <script src="js/download/download1.js"></script> 
 </body>
 </html>

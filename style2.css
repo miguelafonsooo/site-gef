@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+
 
 * {
     padding: 0;
@@ -10,15 +14,90 @@ a {
     color: black;
 }
 
-body {
-    font-weight: bolder;
+body, html {
     width: auto;
-    font-family:  "MontSerrat", sans-serif;
+    font-family:  "MontSerrat";
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     overflow-x: hidden;
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.scrolled .text-left,.scrolled .text-left a h2{
+    color: #1176AB; /* Define a cor do texto como azul quando a classe 'scrolled' é adicionada */
+}
+
+#frontpage {
+    margin: auto;
+    background-image: url(https://wallpapers.com/images/hd/silver-dell-laptop-openand-closed-angles-j6la39rqcedc6ijk-2.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    max-width: 1400px;
+    
+}
+
+.text-left {
+    max-width: 48%; /* Define a largura máxima do contêiner como metade da tela */
+    margin: 0; /* Remove margens automáticas para que o contêiner fique alinhado à esquerda */
+    padding: 5px 20px 20px 20px; /* Adiciona algum espaço interno */
+    text-align: justify; /* Alinha o texto à esquerda */
+    transition: color 0.3s ease;
+}
+
+#frontpage h1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+  
+}
+
+#frontpage h2 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 35px;
+    transition: color 0.3s ease;
+    padding-bottom: 200px;
+}
+
+#frontpage p {
+    font-family: "Miriam Libre", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-indent: 30px;
+
+}
+
+#section2{
+    max-width: none;
+    padding-top: 10px;
+    color: white;
+    background-color: #1176AB;
+}
+
+.text-right {
+    padding-bottom: 100px;
+}
+
+.text-right h1 {
+    
+    transition: color 0.3s ease;
+}
+
+.text-right img {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+
+    border-radius: 15px 15px 15px 15px;
+    
 }
 
 #main-header {
@@ -105,14 +184,38 @@ body {
     visibility: visible;
 }
 
+.subsubmenu {
+    box-shadow: 7px 4px 8px rgba(0, 0, 0, 0.07);
+    opacity: 0;
+    position: absolute;
+    top: -289%;
+    left: 100%;
+    background-color: #1176AB;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+    border-radius: 0px 15px 15px 0px; 
+}
+
+.dropdown .has-submenu:hover + .subsubmenu,
+.subsubmenu:hover {
+    opacity: 1;
+}
+
 .dropdown svg {
     vertical-align: bottom; /* Move o SVG para a parte inferior */
     padding-left: 5px;
     padding-bottom: 4px; /* Adiciona um espaçamento à esquerda do SVG */
 }
 
+.scroll-header .dropdown a svg path {
+    fill: #1176AB; /* Defina a cor desejada aqui */
+  }
 
-.button2 {
+.right {
+    display: flex;
+    gap: 5px;
+}
+.button2, .button3 {
     font-weight: bolder;
     display: inline-block;
     transition: all 0.2s ease-in;
@@ -120,23 +223,17 @@ body {
     overflow: hidden;
     z-index: 1;
     color: #090909;
-    padding: 0.7em 1.7em;
+    padding: 15px 30px;
     cursor: pointer;
     font-size: 18px;
     border-radius: 0.5em;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
-    position: absolute;
-    top: 50%; /* Ajusta a posição verticalmente */
-    transform: translateY(-50%);
-    right: 80px;
 }
-
-.button2:active {
+.button2:active, .button3:active {
     color: #666;
 }
-
-.button2:before {
+.button2:before, .button3:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -150,8 +247,7 @@ body {
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
 }
-
-.button2:after {
+.button2:after, .button3:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -165,51 +261,38 @@ body {
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
 }
-
-.button2:hover {
+.button2:hover, .button3:hover {
     color: #ffffff;
     border: 1px solid #00b7ff;
 }
-
-.button2:hover:before {
+.button2:hover:before, .button3:hover:before {
     top: -35%;
     background-color: #00b7ff;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
-.button2:hover:after {
+.button2:hover:after, .button3:hover:after {
     top: -45%;
     background-color: #00b7ff;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
-.scroll-header .button2:after, .scroll-header .button2:hover,.scroll-header .button2:hover:before, .scroll-header .button2:hover:after {
-    background-color: #1176AB;
+.button3 {
+    margin-right: 30px; /* Adiciona espaço à esquerda do botão "Assistência" */
 }
 
-#verticalAnchor {
-    font-weight: bold;
-    font-weight: bold;
-    position: fixed;
-    right: 0px; /* Distância da borda direita da página */
-    writing-mode: vertical-lr; /* Escreve o texto na vertical, da esquerda para a direita */
-    text-align: center; /* Centraliza o texto na âncora */
-    text-decoration: none;
-    background-color: #1176AB;
-    color: white;
-    padding:  25px 10px 20px 10px;
-    border-top-left-radius: 5px; /* Arredonda o canto superior esquerdo */
-    border-bottom-left-radius: 5px; /* Arredonda o canto inferior esquerdo */
-    white-space: nowrap;
-    font-size: 16px;  /* Evita que o texto quebre em várias linhas */
-    z-index: 999;
-    transition-duration: 0.3s;
-    box-shadow: 6px 14px 20px 7px rgba(0, 0, 0, 0.103);
+.button3 img {
+    vertical-align: middle; /* Aligns the image with the text */
+    margin-left: 5px;
+    width: 19px;
 }
 
-#verticalAnchor:hover {
-    color: white;
-    background-color: #00b7ff;
+
+#imgButton { /* Começa totalmente visível */
+    transition: opacity 0.2s ease-in-out; /* Transição suave de opacidade */
+}
+
+
+.scroll-header .button2:after, .scroll-header .button2:hover,.scroll-header .button2:hover:before, .scroll-header .button2:hover:after, .scroll-header .button3:after, .scroll-header .button3:hover,.scroll-header .button3:hover:before, .scroll-header .button3:hover:after {
+    background-color: #1176AB;
 }
 
 .scroll-header .logo img {
@@ -219,10 +302,6 @@ body {
 .dropdown a svg path {
     fill: white;
 }
-
-.scroll-header .dropdown a svg path {
-    fill: blue; /* Defina a cor desejada aqui */
-  }
 
 .scroll-header {
     background-color: white !important; /* Altere para a cor desejada */
@@ -236,7 +315,7 @@ body {
     color: #1176AB; /* Muda a cor dos links para vermelho quando rola */
 }
 
-.scroll-header .submenu {
+.scroll-header .submenu, .scroll-header .subsubmenu {
     background-color: white; /* Muda o background do submenu para verde quando rola */
 }
 
@@ -244,22 +323,527 @@ body {
     display: none;
 }
 
-/* Estilos para telas menores (dispositivos móveis) */
+main {
+    min-height: 62vh;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+main h1 {
+    display: block;
+    text-align: Center;
+    margin: 40px 50px;
+    font-size: 40px;
+} 
+
+main h2 {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding:30px 0px;
+}
+
+
+.banner p { 
+    padding: 30px 50px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+    
+}
+.banner img {
+    display: flex;
+    margin: auto;
+}
+
+
+.ververmelho a, .verlaranja a, .verazul a{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+
+}
+
+
+.ververmelho a:hover, .verlaranja a:hover, .verazul a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    color: white;
+}
+
+.ververmelho a:hover{background-color: red;}
+
+.verlaranja a:hover{background-color: rgb(244, 121, 32);}
+
+.verazul a:hover{background-color: rgb(13, 141, 192);}
+
+.back , .ververmelho , .verlaranja , .verazul{
+    display: flex;
+}
+
+
+.back a ,.back h1 {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 30px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.back a{
+    font-size: 18px;
+}
+
+.back a:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-color: #0d8dc0c5;
+    color: white;
+    
+}
+
+.servicos {
+    font-size: 20px;
+}
+
+
+
+#container {
+    max-width: 1200px;
+    display: flex; 
+    margin: auto;
+    padding: 50px 0px;
+
+}
+
+#container img {
+    width: 500px;
+    height: auto;
+}
+
+#container p {
+    display: block;
+    
+    padding: 30px;
+    align-items: center;
+    
+}
+
+#width p {
+    font-size: 30px;
+    padding: 20vh 100px;
+    text-align: center;
+}
+
+
+#width img{
+    width: 100vw;
+}
+
+
+table {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+    border-collapse: collapse;
+}
+
+table img {
+    max-width: 400px;
+}
+
+td {
+    
+    font-size: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: bold;
+
+}
+
+td p {
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+
+.portateis #container p {
+    font-size: large;
+}
+
+
+#container iframe {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 30px;
+    width: 80%;
+    height: 400px;
+}
+
+.prods a {
+    text-align: center;
+}
+
+#animation tr td a img{
+    text-decoration: none;
+    color: black;
+    font-weight: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+
+}
+
+#animation tr td a:hover img:hover{
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    background-color: #0d8dc0c5;
+    color: white;
+    
+}
+
+
+.portateis table td h2 {
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+
+.portateis table tr {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.portateis img {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.portateis table tr td p {
+    font-size: 18px;
+    align-items: center;
+    font-weight: normal;
+    text-align: left;
+}
+
+.portateis table tr td li {
+    font-size: 18px;
+    text-align: left;
+}
+
+.preco {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preco h1{
+    transition-duration: 0.3s;
+    border-radius: 15px;
+}
+
+.preco h1:hover {
+    font-size: 45px;
+    background-color: #0d8dc0c5;
+    color: white ;
+}
+
+.preco p {
+    text-align: center !important;
+    margin: auto;
+}
+
+.preco p b {
+    font-weight: bolder;
+    color: #0D8DC0;
+    text-decoration: underline;
+}
+
+.point li{
+    text-align: left;
+    font-size: 17px;
+    padding-left: 20px;
+    font-weight: normal;
+    list-style-type: disc;
+}
+
+/*****************POS*****************/
+
+.postext p {
+    text-indent: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*****************Noticias******************/
+
+
+.noticias  iframe {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    height: 600px;
+}
+
+/*******************Cookies*********************/
+
+.cookies p {
+    padding: 5px;
+}
+
+.cookies h3 {
+    padding: 5px;
+}
+
+/****************Privacidade*******************/
+
+.privacidade p{
+    padding: 5px;
+}
+
+.privacidade h3 {
+    padding: 15px;
+}
+
+.privacidade h4 {
+    padding: 10px;
+}
+
+
+
+/****************footer**************************/
+footer{
+    width: 100%;
+    background-image: url(images/footer_signature.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #1176AB;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+.footerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footerimg img{
+    padding: 30px 0px;
+    margin: 0 10px;
+    
+}
+
+footer p {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+
+}
+
 @media only screen and (max-width: 1100px) {
     .dropdown svg {
         display: none;/* Adiciona uma margem à direita do SVG */
     }
 
-    .button2 {
+    .button2, .button3 {
         display: none;/* Adiciona uma margem à direita do botão */
     }
 
     .contactos {
         display: inline-block;
     }
+
 }
 
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 768px)
+{
+    body {
+        width: auto;
+        font-family: MontSerrat;
+        overflow-x: hidden;
+    }
+
+    
+    main h1 {
+        font-size: 30px;
+    }
+    
+    #container {
+        padding: 0px;
+        display: block;
+    }
+
+    /* Ajustar a largura das imagens */
+    #container img {
+        width: 100%;
+        height: 100%;
+    }
+    #container p {
+
+        display: block;
+    }
+    
+    /* Modificar estilos de navegação */
+    #main-nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    /* Esconder elementos menos importantes */
+    .submenu {
+        display: none;
+    }
+
+    .back, .ververmelho, .verlaranja, .verazul {
+        flex-direction: column;
+    }
+    
+
+
+    /* Centralizar imagens ou conteúdo */
+    .banner img {
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    .prods{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .prods img{
+        max-width: 300px;
+        margin-bottom: 0;
+    }
+
+    .prods p{
+        margin-top: 0;
+    }
+
+    .portateis table {
+        max-width: 85%;
+    }
+
+    .portateis table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .portateis table tr td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; /* Considerar padding e borda na largura total */
+        padding: 10px;
+    }
+
+    .portateis img {
+        width: 80%;
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .portateis table tr td p {
+        font-size: 17px;
+        margin-bottom: 10px; 
+    }
+
+
+    .sticky {
+        display: none;
+    }
+    main h2 {
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    header {
+        width: 100%;    
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    td {
+        padding: 30px 0;
+    }
+
+    .portateis td iframe {
+        width: 85%;
+        padding-top: 10px;
+    }
+
+    #width img {
+        display: none;
+    }
+
+    .banner {
+        padding: 0px;
+    }
+
+    .banner h1 {
+        padding: 0px;
+    }
+
+    .banner p {
+        padding-bottom: 30px;
+    }
+    .banner #container img {
+        width: 300px;
+        height: auto;
+    }
+
+
+    #width p {
+        font-size: 25px;
+        padding: 40px 30px ;
+    }
+
     #main-nav {
         flex-direction: column; /* Empilha os itens verticalmente */
     }
@@ -274,7 +858,7 @@ body {
         margin-bottom: 10px; /* Adiciona um espaço entre o logotipo e os links */
     }
 
-    .button2 {
+    .button2, .button3 {
         display: none;
     }
 
@@ -284,5 +868,9 @@ body {
 
     #main-header a {
         font-size: 16px;
+    }
+
+    #imgButton {
+        display: none;
     }
 }
