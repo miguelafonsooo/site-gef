@@ -130,6 +130,10 @@ body, html {
     transition: background-color 0.3s ease; 
 }
 
+#main-header .logo a{
+    transition: background-color 0.3s ease;
+}
+
 #main-nav {
     display: flex;
     flex-grow: 1;
@@ -929,6 +933,8 @@ footer a {
         color: white;
         fill: white;
     }
+
+
 
     .scroll-header #main-nav a {
         background-color: white;
