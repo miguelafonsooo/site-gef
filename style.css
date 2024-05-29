@@ -910,7 +910,7 @@ footer a {
         background-color: #FFFFFF;
         z-index: 1;
         overflow-y: auto;
-        margin-top: 90px; /* Espaço para o botão do menu */
+        margin-top: 88px; /* Espaço para o botão do menu */
     }
     
     /* Show the menu when the checkbox is checked */
