@@ -849,6 +849,7 @@ footer a {
 
     .logo img {
         width:180px;
+        max-width: 100%;
         justify-content: center;
     }
 
@@ -905,7 +906,7 @@ footer a {
         background-color: #FFFFFF;
         z-index: 1;
         overflow-y: auto;
-        margin-top: 90px; /* Espaço para o botão do menu */
+        margin-top: 80px; /* Espaço para o botão do menu */
     }
     
     /* Show the menu when the checkbox is checked */
