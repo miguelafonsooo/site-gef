@@ -1062,8 +1062,8 @@ footer a {
     }
 
     .logo {
-        width: 150px; /* Reduz o tamanho do logotipo */
-        margin-bottom: 10px; /* Adiciona um espaço entre o logotipo e os links */
+        width: 150px;
+        height: auto;
     }
 
     .button2, .button3 {
