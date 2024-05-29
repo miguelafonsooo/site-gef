@@ -44,6 +44,9 @@ body, html {
     max-width: 1400px;
     margin-top: 80px;
 }
+.menu-content {
+    display: n;
+}
 
 #frontpage img {
     display: none;
@@ -431,6 +434,8 @@ main h2 {
     border-radius: 15px;
     margin-bottom: 30px;
 }
+
+
 
 .back a{
     font-size: 18px;
@@ -906,7 +911,7 @@ footer a {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #FFFFFF;
         z-index: 1;
         overflow-y: auto;

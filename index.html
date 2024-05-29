@@ -135,6 +135,20 @@
 });
 
                 </script>
+                <script>
+                    window.addEventListener('resize', function() {
+                      if (window.innerWidth > 1235) {
+                        document.querySelector('.menu-content').style.display = 'none';
+                      } else {
+                        document.querySelector('.menu-content').style.display = 'block'; // ou outro estilo desejado
+                      }
+                    });
+                    
+                    // Para garantir que o menu seja escondido inicialmente se a largura da janela já for maior que 1235px
+                    if (window.innerWidth > 1235) {
+                      document.querySelector('.menu-content').style.display = 'none';
+                    }
+                    </script>
             </div>
         </nav>
     </header>
