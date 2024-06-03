@@ -1,96 +1,129 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submenu Mobile</title>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-.menu-container {
-    position: relative;
-    width: 100%;
-}
-
-.menu-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    text-align: left;
-}
-
-.submenu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f9f9f9;
-    z-index: 1;
-    overflow-y: auto;
-    padding-top: 60px; /* Espaço para o botão do menu */
-}
-
-.close-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    text-align: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.submenu a {
-    color: black;
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size: 18px;
-}
-
-.submenu a:hover {
-    background-color: #ddd;
-}
-
-    </style>
-</head>
-<body>
-    <div class="menu-container">
-        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
-        <div id="submenu" class="submenu">
-            <button class="close-button" onclick="toggleMenu()">✖ Fechar</button>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
+<header id="main-header">
+    <nav id="main-nav">
+        <div class="logo">
+            <a href="../../../index.html" style="margin: 0; background-color: transparent;">
+                    <img src="../../../images/logobranco.png" alt="Logo Azul" id="logo-img">
+                </a>
+        </div>    
+        <div class="left">
+            <a href="../../../servicos.html">Serviços</a>
+            <div class="dropdown">
+                <a href="../../../produtos.html">Produtos<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></a>
+                <div class="submenu">
+                    <a href="../../../produtos/portateis.html">Portáteis</a>
+                    <a href="../../../produtos/monitores.html">Monitores</a>
+                    <a href="../../../produtos/computadores.html">Computadores</a>
+                    <a href="../../../produtos/impressoras.html">Impressoras</a>
+                    <a href="../../../produtos/software.html">Software de Segurança</a>
+                    <a href="../../../produtos/projetores.html">Projetores e Câmaras</a>
+                    <a href="../../../produtos/servidor.html">Servidores</a>
+                    <a href="../../../produtos/softwareaplicacional.html">Software Aplicacional</a>
+                    <div class="dropdown">
+                        <a href="../../../produtos/videovigilancia.html" class="has-submenu">Videovigilância</a>
+                        <div class="subsubmenu">
+                            <a href="../../../produtos/videovigilancia/cctv.html">CCTV</a>
+                            <a href="../../../produtos/videovigilancia/alarmes.html">Centrais de Alarmes</a>
+                            <a href="../../../produtos/videovigilancia/gravadores.html">Videogravadores</a>
+                        </div>
+                    </div>
+                    <a href="../../../produtos/controlos.html">Controlos de Acesso</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../../../software.html">Software<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></a>
+                <div class="submenu" style="padding: 20px 30px;">
+                    <a href="../../../software/phc.html">PHC</a>
+                    <a href="../../../pos.html">POS</a>
+                    <a href="../../../software/mss-mobile-files-system.html">MSS</a>
+                </div>
+            </div>
+            <a href="../../../noticias.html">Notícias</a>
         </div>
-    </div>
-    <script>
-        function toggleMenu() {
-    var submenu = document.getElementById('submenu');
-    if (submenu.style.display === 'block') {
-        submenu.style.display = 'none';
-    } else {
-        submenu.style.display = 'block';
-    }
-}
+        <div class="right">
+            <a href="../../../contactos.html"><button class="button2">Contactos</button></a>
+            <a href="../../../https://api.us0.swi-rc.com/integration/integration.php?uid=ozxewGqfHFcOqzMTr%2BqzXY01dW%2BSdk8myvHcRqdEa0lTw8QFWlwjGTxqF5VB4XIyA5g2C7LdAKNVhsgOsjc%2FclIZtvbTAc2TIA%3D%3D">
+                <button class="button3" onmouseover="changeImage(true)" onmouseout="changeImage(false)">Assistência <img id="imgButton" src="images/download_preto.png"></button>
+            </a>
+            <div class="menu-container">
+                <label class="barra">
+                    <input type="checkbox" id="menuToggle">
+                    <div class="checkmark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            <div id="menuContent" class="menu-content">
+                <a href="../../../servicos.html">Serviços</a>
+                <a href="#" id="toggleSubmenu">Produtos<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                    <div id="customSubmenu" class="custom-submenu">
+                        <a href="../../../produtos/portateis.html">Portáteis</a>
+                        <a href="../../../produtos/monitores.html">Monitores</a>
+                        <a href="../../../produtos/computadores.html">Computadores</a>
+                        <a href="../../../produtos/impressoras.html">Impressoras</a>
+                        <a href="../../../produtos/software.html">Software de Segurança</a>
+                        <a href="../../../produtos/projetores.html">Projetores e Câmaras</a>
+                        <a href="../../../produtos/servidor.html">Servidores</a>
+                        <a href="../../../produtos/softwareaplicacional.html">Software Aplicacional</a>
+                        <a href="#" id="toggleCategory1Submenu">Videovigilância<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                            <div id="category1Submenu" class="custom-submenu">
+                                <a href="../../../produtos/videovigilancia/cctv.html">CCTV</a>
+                                <a href="../../../produtos/videovigilancia/alarmes.html">Centrais de Alarmes</a>
+                                <a href="../../../produtos/videovigilancia/gravadores.html">Videogravadores</a>
+                                <a href="../../../produtos/controlos.html">Controlos de Acesso</a>
+                            </div>
+                    </div>
+                    <a href="#" id="toggleSoftwareSubmenu">Software <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                    <div id="SoftwareSubmenu" class="custom-submenu">
+                        <a href="../../../software/phc.html">PHC</a>
+                        <a href="../../../pos.html">POS</a>
+                        <a href="../../../software/mss-mobile-files-system.html">MSS</a>
+                    </div>
+            <a href="../../../noticias.html">Notícias</a>
+            <a href="../../../contactos.html">Contactos</a>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                var menuToggle = document.getElementById('menuToggle');
+                var menuContent = document.getElementById('menuContent');
+                var submenuLink = document.getElementById('toggleSubmenu');
+                var submenu = document.getElementById('customSubmenu');
+                var SoftwareSubmenuLink = document.getElementById('toggleSoftwareSubmenu');
+                var SoftwareSubmenu = document.getElementById('SoftwareSubmenu');
+                var category1SubmenuLink = document.getElementById('toggleCategory1Submenu');
+                var category1Submenu = document.getElementById('category1Submenu');
 
-    </script>
-</body>
-</html>
+                menuToggle.addEventListener('change', function() {
+                    if (menuToggle.checked) {
+                        menuContent.style.display = 'block';
+                    } else {
+                        menuContent.style.display = 'none';
+                    }
+                });
+
+                    submenuLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Evita que o link seja seguido
+                        toggleDisplay(submenu);
+                    });
+
+                    SoftwareSubmenuLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Evita que o link seja seguido
+                        toggleDisplay(SoftwareSubmenu);
+                    });
+
+                    category1SubmenuLink.addEventListener('click', function(event) {
+                        event.preventDefault(); // Evita que o link seja seguido
+                        toggleDisplay(category1Submenu);
+                    });
+
+                    function toggleDisplay(element) {
+                        if (element.style.display === 'block') {
+                            element.style.display = 'none';
+                        } else {
+                            element.style.display = 'block';
+                        }
+                    }
+    });
+            </script>
+        </div>
+    </nav>
+</header>

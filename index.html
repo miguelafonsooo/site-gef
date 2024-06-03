@@ -93,47 +93,46 @@
                 <a href="contactos.html">Contactos</a>
                 <script>
                     document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.getElementById('menuToggle');
-            var menuContent = document.getElementById('menuContent');
-            var submenuLink = document.getElementById('toggleSubmenu');
-            var submenu = document.getElementById('customSubmenu');
-            var SoftwareSubmenuLink = document.getElementById('toggleSoftwareSubmenu');
-            var SoftwareSubmenu = document.getElementById('SoftwareSubmenu');
-            var category1SubmenuLink = document.getElementById('toggleCategory1Submenu');
-            var category1Submenu = document.getElementById('category1Submenu');
+                    var menuToggle = document.getElementById('menuToggle');
+                    var menuContent = document.getElementById('menuContent');
+                    var submenuLink = document.getElementById('toggleSubmenu');
+                    var submenu = document.getElementById('customSubmenu');
+                    var SoftwareSubmenuLink = document.getElementById('toggleSoftwareSubmenu');
+                    var SoftwareSubmenu = document.getElementById('SoftwareSubmenu');
+                    var category1SubmenuLink = document.getElementById('toggleCategory1Submenu');
+                    var category1Submenu = document.getElementById('category1Submenu');
 
-            menuToggle.addEventListener('change', function() {
-                if (menuToggle.checked) {
-                    menuContent.style.display = 'block';
-                } else {
-                    menuContent.style.display = 'none';
-                }
-            });
+                    menuToggle.addEventListener('change', function() {
+                        if (menuToggle.checked) {
+                            menuContent.style.display = 'block';
+                        } else {
+                            menuContent.style.display = 'none';
+                        }
+                    });
 
-                submenuLink.addEventListener('click', function(event) {
-                    event.preventDefault(); // Evita que o link seja seguido
-                    toggleDisplay(submenu);
-                });
+                        submenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(submenu);
+                        });
 
-                SoftwareSubmenuLink.addEventListener('click', function(event) {
-                    event.preventDefault(); // Evita que o link seja seguido
-                    toggleDisplay(SoftwareSubmenu);
-                });
+                        SoftwareSubmenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(SoftwareSubmenu);
+                        });
 
-                category1SubmenuLink.addEventListener('click', function(event) {
-                    event.preventDefault(); // Evita que o link seja seguido
-                    toggleDisplay(category1Submenu);
-                });
+                        category1SubmenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(category1Submenu);
+                        });
 
-                function toggleDisplay(element) {
-                    if (element.style.display === 'block') {
-                        element.style.display = 'none';
-                    } else {
-                        element.style.display = 'block';
-                    }
-                }
-});
-
+                        function toggleDisplay(element) {
+                            if (element.style.display === 'block') {
+                                element.style.display = 'none';
+                            } else {
+                                element.style.display = 'block';
+                            }
+                        }
+        });
                 </script>
             </div>
         </nav>
@@ -144,7 +143,7 @@
                 <div class="text-left">
                     <h1>Bem-vindos à GEF Guarda!</h1>
                     <p>Somos uma empresa especializada em fornecer serviços e soluções globais na área de sistemas de informação.</p>
-                    <p>Fiquem à vontade para explorar nossos produtos e entrem em contato conosco sempre que precisarem.</p>
+                    <p>Fiquem à vontade para explorar os nossos produtos e entrem em contato conosco sempre que precisarem.</p>
                     <a href="contactos.html">
                         <h2>Estamos à disposição para ajudar!</h2>
                     </a>
@@ -164,7 +163,7 @@
                 <tr>
                     <td class="prods">
                         Samsung S34A650
-                        <a href="produtos/monitores/samsung.html"></a>
+                        <a href="produtos/monitores/samsung.html">
                         <img src="produtos/images/monitores/samsung.jpg" alt="">
                         519,00€
                         <p>
@@ -173,7 +172,7 @@
                     </td>
                     <td class="prods">
                         Surface Pro 5 (Recondicionado)
-                        <a href="produtos/portateis/surface.html"></a>
+                        <a href="produtos/portateis/surface.html">
                         <img src="produtos/images/portateis/Surface.jpg" alt="">
                         519,00€
                         <p>

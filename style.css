@@ -1094,7 +1094,8 @@ footer a {
     }
 
     .portateis img {
-        width: 80%;
+        width: 50%;
+        margin: auto;
         height: auto; 
         margin-bottom: 10px;
     }
