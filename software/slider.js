@@ -42,3 +42,6 @@ function nextSlide() {
 function prevSlide() {
     showSlide(currentSlide - 1, 'prev');
 }
+document.addEventListener('DOMContentLoaded', function() {
+    showSlide(currentSlide);
+});
