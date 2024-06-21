@@ -676,16 +676,45 @@ td p {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    /* Inicialmente, posiciona o primeiro slide no centro */
+    transform: translateX(-25%);
 }
 
 .slide {
-    min-width: 100%;
+    position: relative;
+    width: 100%; /* Cada slide ocupa 100% do container */
     box-sizing: border-box;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .slide img {
     width: 100%;
     border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.slide:hover img {
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+.slide .slide-title {
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255,0,5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slide:hover .slide-title {
+    opacity: 1;
 }
 
 .slider-prev, .slider-next {
@@ -698,6 +727,7 @@ td p {
     cursor: pointer;
     border-radius: 50%;
     user-select: none;
+    z-index: 1;
 }
 
 .slider-prev:hover, .slider-next:hover {
@@ -712,22 +742,22 @@ td p {
     right: 10px;
 }
 
-.slide .slide-title {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+/**************phc software***********************/
+
+.software img{
+    width: 100%;
 }
 
-.slider:hover .slide .slide-title {
-    opacity: 1
+.software h3 {
+    text-align: center;
+    font-size: 23px;
 }
+
+.software p {
+    padding: 10px 0;
+    text-indent: 15px;
+}
+
 /****************footer**************************/
 footer{
     width: 100%;
