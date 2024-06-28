@@ -744,19 +744,53 @@ td p {
 
 /**************phc software***********************/
 
-.software img{
-    width: 100%;
-}
-
-.software h3 {
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-left: 50px; /* Adicionado para centralizar horizontalmente */
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #900;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-title {
+    font-size: 1.2rem;
     text-align: center;
-    font-size: 23px;
-}
-
-.software p {
-    padding: 10px 0;
-    text-indent: 15px;
-}
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 5px;
+  }
+  
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #fff;
+    color: #900;
+  }
+  
 
 /****************footer**************************/
 footer{
@@ -890,6 +924,74 @@ footer a {
   
   .barra {
     display: none;
+  }
+
+  /********* Menu lateral PHC*****************/
+
+  .sidebar {
+    width: 300px;
+    background-color: #900;
+    color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 5px;
+  }
+  
+  .sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #fff;
+    color: #900;
+  }
+  
+  .content {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .submenu-content {
+    display: none;
+  }
+  
+  .submenu-content.active {
+    display: block;
+  }
+
+  #phc {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+
   }
 
 @media only screen and (max-width: 1235px) {

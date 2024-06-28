@@ -152,6 +152,27 @@
             </p>
         </div>
         <div class="back"><a href="../../software/phc.html">Voltar Atrás</a></div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="menu-title">PHC</div>
+                <nav>
+                    <ul>
+                        <li><a href="?submenu=info1" data-content="info1">Software de Gestão de Projetos e Equipas</a></li>
+                        <li><a href="?submenu=info2" data-content="info2">Software para Clínicas</a></li>
+                        <li><a href="?submenu=info3" data-content="info3">Software para Construção Civil</a></li>
+                        <li><a href="?submenu=info4" data-content="info4">Software para Indústria e Produção</a></li>
+                        <li><a href="?submenu=info5" data-content="info5">Software para Recursos Humanos</a></li>
+                        <li><a href="?submenu=info6" data-content="info6">Software para Restauração</a></li>
+                        <li><a href="?submenu=info7" data-content="info7">Software para Suporte Técnico</a></li>
+                        <li><a href="?submenu=info8" data-content="info8">Software para a Área de Frota Automóvel</a></li>
+                        <li><a href="?submenu=info9" data-content="info9">Solução Financeira</a></li>
+                        <li><a href="?submenu=info10" data-content="info10">Solução de CRM</a></li>
+                        <li><a href="?submenu=info11" data-content="info11">Solução de Gestão e ERP</a></li>
+                        <li><a href="?submenu=info12" data-content="info12">Solução para Logística e Distribuição</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footerimg">
@@ -193,6 +214,7 @@
                 </li>
             </a>
           </ul>
+          
     </footer>
 </body>
 <script>
@@ -208,5 +230,16 @@ if (window.pageYOffset > sticky) {
     nav.classList.remove("sticky");
 }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.sidebar nav ul li a');
+
+    // Adiciona eventos de clique aos links do menu
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            const contentId = item.getAttribute('data-content');
+            alert('Você clicou em: ' + contentId);
+        });
+    });
+});
 </script>
 </html>
