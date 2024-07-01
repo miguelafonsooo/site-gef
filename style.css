@@ -749,7 +749,7 @@ td p {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    padding-left: 50px; /* Adicionado para centralizar horizontalmente */
+    padding-left: 50px; 
   }
   
   .sidebar {
