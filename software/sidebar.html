@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Gestão de Projetos e Equipas | Gef Guarda</title>
+     <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="logo">
+                <a href="../../index.html" style="margin: 0; background-color: transparent;">
+                    <img src="../../images/logobranco.png" alt="Logo Azul" id="logo-img">
+                </a>
+            </div>    
+            <div class="left">
+                <a href="../../servicos.html">Serviços</a>
+                <div class="dropdown">
+                    <a href="../../produtos.html">Produtos<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></a>
+                    <div class="submenu">
+                        <a href="../../produtos/portateis.html">Portáteis</a>
+                        <a href="../../produtos/monitores.html">Monitores</a>
+                        <a href="../../produtos/computadores.html">Computadores</a>
+                        <a href="../../produtos/impressoras.html">Impressoras</a>
+                        <a href="../../produtos/software.html">Software de Segurança</a>
+                        <a href="../../produtos/projetores.html">Projetores e Câmaras</a>
+                        <a href="../../produtos/servidor.html">Servidores</a>
+                        <a href="../../produtos/softwareaplicacional.html">Software Aplicacional</a>
+                        <div class="dropdown">
+                            <a href="../../produtos/videovigilancia.html" class="has-submenu">Videovigilância</a>
+                            <div class="subsubmenu">
+                                <a href="../../produtos/videovigilancia/cctv.html">CCTV</a>
+                                <a href="../../produtos/videovigilancia/alarmes.html">Centrais de Alarmes</a>
+                                <a href="../../produtos/videovigilancia/gravadores.html">Videogravadores</a>
+                            </div>
+                        </div>
+                        <a href="../../produtos/controlos.html">Controlos de Acesso</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../../software.html">Software<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path> </g></svg></a>
+                    <div class="submenu" style="padding: 20px 30px;">
+                        <a href="../../software/phc.html">PHC</a>
+                        <a href="../../pos.html">POS</a>
+                        <a href="../../software/mss-mobile-files-system.html">MSS</a>
+                    </div>
+                </div>
+                <a href="../../noticias.html">Notícias</a>
+            </div>
+            <div class="right">
+                <a href="../../contactos.html"><button class="button2">Contactos</button></a>
+                <a href="https://api.us0.swi-rc.com/integration/integration.php?uid=ozxewGqfHFcOqzMTr%2BqzXY01dW%2BSdk8myvHcRqdEa0lTw8QFWlwjGTxqF5VB4XIyA5g2C7LdAKNVhsgOsjc%2FclIZtvbTAc2TIA%3D%3D">
+                    <button class="button3" onmouseover="changeImage(true)" onmouseout="changeImage(false)">Assistência <img id="imgButton" src="../../images/download_preto.png"></button>
+                </a>
+                <div class="menu-container">
+                    <label class="barra">
+                        <input type="checkbox" id="menuToggle">
+                        <div class="checkmark">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                <div id="menuContent" class="menu-content">
+                    <a href="../../servicos.html">Serviços</a>
+                    <a href="#" id="toggleSubmenu">Produtos<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                        <div id="customSubmenu" class="custom-submenu">
+                            <a href="../../produtos/portateis.html">Portáteis</a>
+                            <a href="../../produtos/monitores.html">Monitores</a>
+                            <a href="../../produtos/computadores.html">Computadores</a>
+                            <a href="../../produtos/impressoras.html">Impressoras</a>
+                            <a href="../../produtos/software.html">Software de Segurança</a>
+                            <a href="../../produtos/projetores.html">Projetores e Câmaras</a>
+                            <a href="../../produtos/servidor.html">Servidores</a>
+                            <a href="../../produtos/softwareaplicacional.html">Software Aplicacional</a>
+                            <a href="#" id="toggleCategory1Submenu">Videovigilância<svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                                <div id="category1Submenu" class="custom-submenu">
+                                    <a href="../../produtos/videovigilancia/cctv.html">CCTV</a>
+                                    <a href="../../produtos/videovigilancia/alarmes.html">Centrais de Alarmes</a>
+                                    <a href="../../produtos/videovigilancia/gravadores.html">Videogravadores</a>
+                                    <a href="../../produtos/controlos.html">Controlos de Acesso</a>
+                                </div>
+                        </div>
+                        <a href="#" id="toggleSoftwareSubmenu">Software <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#1277AD" stroke-width="7.26" style="padding-left: 10px;"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="16.5"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg></a>
+                        <div id="SoftwareSubmenu" class="custom-submenu">
+                            <a href="../../software/phc.html">PHC</a>
+                            <a href="../../pos.html">POS</a>
+                            <a href="../../software/mss-mobile-files-system.html">MSS</a>
+                        </div>
+                <a href="../../noticias.html">Notícias</a>
+                <a href="../../contactos.html">Contactos</a>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                    var menuToggle = document.getElementById('menuToggle');
+                    var menuContent = document.getElementById('menuContent');
+                    var submenuLink = document.getElementById('toggleSubmenu');
+                    var submenu = document.getElementById('customSubmenu');
+                    var SoftwareSubmenuLink = document.getElementById('toggleSoftwareSubmenu');
+                    var SoftwareSubmenu = document.getElementById('SoftwareSubmenu');
+                    var category1SubmenuLink = document.getElementById('toggleCategory1Submenu');
+                    var category1Submenu = document.getElementById('category1Submenu');
+    
+                    menuToggle.addEventListener('change', function() {
+                        if (menuToggle.checked) {
+                            menuContent.style.display = 'block';
+                        } else {
+                            menuContent.style.display = 'none';
+                        }
+                    });
+    
+                        submenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(submenu);
+                        });
+    
+                        SoftwareSubmenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(SoftwareSubmenu);
+                        });
+    
+                        category1SubmenuLink.addEventListener('click', function(event) {
+                            event.preventDefault(); // Evita que o link seja seguido
+                            toggleDisplay(category1Submenu);
+                        });
+    
+                        function toggleDisplay(element) {
+                            if (element.style.display === 'block') {
+                                element.style.display = 'none';
+                            } else {
+                                element.style.display = 'block';
+                            }
+                        }
+        });
+                </script>
+            </div>
+        </nav>
+    </header>
+    <script src="../../header3.js"></script>
+    <script src="../../js/download/download3.js"></script>
+    <main style="max-width: max-content;">
+        <div class="container">
+            <div class="sidebar">
+                <div class="menu-title">PHC</div>
+                <nav>
+                    <ul>
+                        <li><a href="#info1" data-content="info1">Software de Gestão de Projetos e Equipas</a></li>
+                        <li><a href="#info2" data-content="info2">Software para Clínicas</a></li>
+                        <li><a href="#info3" data-content="info3">Software para Construção Civil</a></li>
+                        <li><a href="#info4" data-content="info4">Software para Indústria e Produção</a></li>
+                        <li><a href="#info5" data-content="info5">Software para Recursos Humanos</a></li>
+                        <li><a href="#info6" data-content="info6">Software para a Restauração</a></li>
+                        <li><a href="#info7" data-content="info7">Software para Suporte Técnico</a></li>
+                        <li><a href="#info8" data-content="info8">Software para a Área de Frota Automóvel</a></li>
+                        <li><a href="#info13" data-content="info13">Software Retalho</a></li>
+                        <li><a href="#info9" data-content="info9">Solução Financeira</a></li>
+                        <li><a href="#info10" data-content="info10">Solução de CRM</a></li>
+                        <li><a href="#info11" data-content="info11">Solução de Gestão e ERP</a></li>
+                        <li><a href="#info12" data-content="info12">Solução para Logística e Distribuição</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div id="info1" class="content-item active">
+                    <h1>Software de Gestão de Projetos e Equipas</h1>
+                    <div class="software">
+                        <img src="Images/equipas.png" alt="">
+                        <h3>Não perca mais tempo inutilmente. Optimize o tempo dos seus colaboradores e termine os projectos no tempo previsto.</h3>
+                        <p>
+                            Tempo é dinheiro! Esta frase diz tudo sobre os maiores desafios que qualquer empresa tem hoje em dia: optimizar o tempo dos seus colaboradores, aproveitar cada segundo de uma forma produtiva e evitar todo o desperdício. Numa palavra: “produtividade”.
+                        </p>
+                        <p>
+                            Com o software PHC para gestão de tempo e projectos, toda a empresa está alinhada nas tarefas a executar, nos projectos em desenvolvimento, conseguindo em simultâneo que toda a informação seja disponibilizada em tempo real a quem necessita dela.
+                        </p>
+                    </div>
+                    </div>
+                <div id="info2" class="content-item"><h1>Software para Clínicas</h1>
+                    <div class="software">
+                        <img src="Images/clinicas.png" alt="">
+                        <h3>O controlo total da organização da clínica.</h3> 
+                        <p>
+                            Na área da saúde, o eficaz tratamento de cada Paciente é a prioridade mais importante. Mas as tarefas administrativas e de facturação das clínicas e consultórios, apesar de não serem as áreas vitais, contribuem para um serviço completo de excelência e devem ser desempenhadas com profissionalismo e sem erros.
+                        </p>
+                        <p>
+                            Com a solução de software para clínicas e consultórios, além da informação clínica total sobre cada paciente, devidamente protegida, tem toda a área financeira e administrativa controlada e bem gerida, não descurando a facturação a pacientes e entidades e o controlo das contas correntes, monitorizando perto a rentabilidade da clínica.
+                        </p>
+                    </div>
+                </div>
+                <div id="info3" class="content-item"><h1>Software para Construção Civil</h1>
+                    <div class="software">
+                        <img src="Images/construçao.png" alt="">
+                        <h3>A solução integrada para a emissão e controlo de orçamentos, o planeamento de obras, os autos de medição e facturação, o controlo financeiro das obras, a revisão de preços, a facturação de contas correntes, tesouraria e recebimentos.</h3>
+                        <p> 
+                            A construção de um sistema para que todos na empresa estejam alinhados com as necessidades totais de cada obra e projeto é fundamental. É imprescindível um sistema de informação que permita, de uma forma totalmente integrada e sem perda de informação, a execução do orçamento, o planeamento da obra, a execução e acompanhamento da mesma, assim como a contínua análise financeira e controlo de custos.
+                        </p>
+                        <p>
+                            Como construtor, é crítico planear uma agenda em que todos os envolvidos em cada projeto saibam a cada momento o seu estado e qual o seu papel.
+                        </p>
+                        <p>
+                            Com o software para construção civil da PHC, vai comunicar e fornecer informações precisas e relatórios em tempo real que permitem ao responsável de cada obra e projeto monitorizar o andamento, reagir atempadamente, assegurar que os objectivos e timings são atingidos e que o cliente paga em tempo útil.
+                        </p>
+                        <p>
+                            Esta solução contém funcionalidades que vão assegurar um excelente profissionalismo nos orçamentos e propostas, um controlo total sobre os custos e rentabilidade de cada obra, para que todos sejam entregues no tempo previsto, ao custo estimado e com um nível de qualidade que deixa o cliente totalmente satisfeito.
+                        </p>
+            
+                    </div>
+                </div>
+                <div id="info4" class="content-item"><h1>Software para Indústria e Produção</h1>
+                    <div class="software">
+                        <img src="Images/produçao.png" alt="">
+                        <h3>Integre e supervisione a produção com flexibilidade. Controlo completo para indústria.</h3>
+                        <p>
+                            A indústria enfrenta uma pressão constante para produzir produtos de qualidade superior. Esta pressão é contínua e crescente! As flutuações macroeconómicas e reguladoras vêm adicionar complexidade às tarefas que os fabricantes enfrentam. É imperativo um esforço contínuo para reduzir custos e aumentar a rentabilidade para se manter competitivo, acompanhados de uma rápida e ágil flexibilidade.
+                        </p>
+                        <p>
+                            Esta solução da PHC é um software para a indústria e produção que contém funcionalidades que permitem planear, programar, executar e monitorizar todo o processo de fabrico. Desde a aquisição das matérias-primas, à subcontratação de partes do processo de produção, ao controlo total de custos, à fabricação por encomenda ou em modo contínuo, esta solução contempla o que é necessário para lhe dar o controlo absoluto acompanhado de uma grande flexibilidade.
+                        </p>
+                        <p>
+                            Com tecnologia avançada e totalmente integrada, o Software PHC fornece informação em tempo real do processo de fabrico, permitindo antecipar problemas, reagir rapidamente a anomalias e, tudo isto, de uma forma integrada com o seu modelo de negócio.
+                        </p>
+                    </div>
+                </div>
+                <div id="info5" class="content-item">
+                    <h1>Software para Recursos Humanos</h1>
+                    <div class="software">
+                        <img src="Images/recursos.png" alt="">
+                        <h3>Vá mais longe na gestão de RH.</h3>
+                        <p>
+                            As nossas soluções para a área de recursos humanos destinam-se a gerir e potenciar, de uma forma estratégica e coerente, o activo mais valioso da sua organização: os seus colaboradores.
+                        </p>
+                    <p>
+                        Nos dias de hoje, o software empresarial permite progredir muito além dos limites do departamento de RH e do processamento de vencimentos. Torna-se crítico para o sucesso, o desenvolvimento dos recursos e a gestão do recrutamento, assim como a retenção de talentos de uma forma controlada e centrada no crescimento da organização.
+                    </p>
+                    <p>
+                        Com a solução PHC tem software de recursos humanos, cumpre com as obrigações de processamento de vencimentos e vai mais longe no acompanhamento do desenvolvimento de cada colaborador, gere todo o ciclo da sua presença na organização, o treino e formações necessárias, sem esquecer a manutenção e controlo dos índices de absentismo, para que todos se concentrem nos objectivos da empresa.
+                    </p>
+                </div>
+            </div>
+            <div id="info6" class="content-item">
+                <div class="software">
+                    <h1>Software para Restauração</h1>
+                    <img src="Images/restauraçao.png" alt="">
+                    <h3>Seja eficiente no atendimento. Controle pormenorizadamente a área financeira e operacional do seu restaurante.</h3> 
+                    <p>
+                        A indústria de restauração sofreu nos últimos anos grandes mudanças no seu estilo de gestão. Neste momento, cada organização enfrenta novos desafios que incluem um aumento da procura de variedade e inovação, uma maior regulamentação legal sobre a qualidade, rastreabilidade dos produtos, margens de lucro reduzidas e a necessidade de gestão dinâmica do serviço ao público.
+                    </p>
+                    <p>
+                        Com esta solução da PHC é um software para a restauração, não só obtém um excelente nível de profissionalização do serviço, como obtém um back office que permite optimizar os processos internos de compras e controlo de custos, o que constitui a base para uma situação financeira sustentável e orientada para o crescimento.
+                    </p>
+                    <p>
+                        Optimizar a eficiência da organização é agora um ponto crítico para todo o setor da restauração.
+                    </p>      
+                </div>
+            </div>
+                <div id="info7" class="content-item">
+                    <h1>Software para Suporte Técnico</h1>
+                    <div class="software">
+                        <img src="Images/tecnico.png" alt="">
+                        <h3>Ganhe tempo e eficácia no serviço ao cliente. Optimize o tempo dos técnicos e a qualidade de serviço.</h3>
+                        <p>
+            
+                            Hoje, as empresas que prestam serviços têm de manter elevados níveis de prestação no contexto de uma cada vez mais alta expectativa dos clientes e competição de empresas equivalentes. Estas pressões exigem uma solução de gestão abrangente que inclua uma forte capacidade de gestão do parque de clientes, gestão de equipas técnicas, análise contínua do nível de serviço, acompanhamento e monitorização da gestão do tempo, elaboração rápida de orçamentos e gestão continuada de contratos
+                            Para manter um alto nível de mudança, sempre necessária nos mercados competitivos em que estas organizações actuam, o sistema interno deve ser muito flexível.
+                        </p>
+                        <p>
+                            Esta solução da PHC, o software de suporte e assistência técnica, possui um conjunto de funcionalidades que vão permitir que a sua organização ganhe tempo e aumente a eficácia no serviço ao cliente, agilizando as operações de suporte e contribuindo para que forneça um serviço completo de excelência em todas as situações. Utilizando tecnologia avançada monitoriza em tempo real o desempenho e qualidade do seu serviço pós-venda, numa solução que traz a flexibilidade que o seu negócio precisa para continuar a evoluir.
+                        </p>
+            
+                    </div>
+                </div>
+                <div id="info8" class="content-item">
+                    <h1>Software para a área de Frota Automóvel</h1>
+                    <div class="software">
+                        <img src="Images/automovel.png" alt="">
+                        <h3>Controle a evolução dos custos das suas viaturas. Optimize a gestão da manutenção.</h3>
+                        <p>
+                            A gestão da frota automóvel é um desafio de controlo de custos e monitorização da manutenção. Tenha 5 ou 1000 viaturas, esta é uma área em que a atenção e a disponibilidade de um sistema de informação trazem uma rentabilidade inesperada. O gestor da frota está sempre à procura daquela vantagem que lhe permite obter mais da frota e manter os seus custos dentro do orçamento.
+                        </p>
+                        <p>
+                            Com a nossa solução de software para gestão de frotas vai dispor de um conjunto de funcionalidades que lhe permitem monitorizar em tempo real os custos de cada viatura e assegurar que a manutenção das mesmas é realizada de uma forma eficaz e profissional.
+                        </p>
+                    </div>
+                </div>
+                <div id="info9" class="content-item">
+                    <h1>Solução Financeira</h1>
+                    <div class="software">
+                        <img src="Images/financeira.png" alt="">
+                        <h3>O controlo financeiro de todas as áreas com uma solução integrada e completa.</h3>
+                        <p>
+                            O objetivo da PHC com este software para a área financeira, é ajudar cada empresa a alcançar uma óptima gestão financeira, o controlo total sobre os dados fiscais e respectivos relatórios, gerir e monitorizar o desempenho da empresa e permitir cumprir com as suas obrigações legais.
+                        </p>
+                        <p>
+                            Com o software para gestão financeira automatiza e agiliza os seus processos financeiros com ferramentas avançadas que tornam mais simples e mais rápido cumprir as complexas exigências legislativas e acompanhar o desempenho financeiro da sua empresa.
+                        </p>
+                        <p>
+                            No fundo, o crescimento e o sucesso dependem da capacidade de criar e gerir um negócio rentável. A combinação de um ambiente competitivo global com a conformidade legal obrigatória influencia a capacidade de controlar a sua área financeira. É sempre um dos maiores desafios e oportunidades que vai ter de enfrentar.
+                        </p>
+                    </div>
+                </div>
+                <div id="info10" class="content-item">
+                    <h1>Solução de CRM - Customer Relationship Management</h1>
+                    <div class="software">
+                        <img src="Images/crm.png" alt="">
+                        <h3>A solução completa de gestão de força de vendas e automatização de acções de marketing destinada a aumentar as suas vendas.</h3>
+                        <p>
+                            As estratégias para obter novos clientes e manter os actuais nunca foram tão importantes como neste momento. Cada cliente deseja ser tratado de uma forma individualizada. No actual mercado competitivo são necessárias ferramentas de alta produtividade que permitam às equipas comerciais e de marketing acompanhar a totalidade do ciclo de vida de cada cliente, a sua rentabilidade, as suas preferências e as suas necessidades, de modo a assegurar o crescimento constante dos lucros do negócio.
+                        </p>
+                        <p>
+                           Com as nossas soluções de CRM, consegue uma visão global dos seus clientes e potenciais clientes, dos pontos de interacção com todas as áreas da empresa, independentemente da posição no ciclo de vida do cliente. Ao alargar a visão do cliente a todos quanto necessitem dela internamente, torna a experiência do próprio cliente com a sua organização numa fonte de excelência e satisfação. Um factor que aumenta as vendas!
+                        </p>
+                        <p>
+                            Esta solução dá-lhe ferramentas que lhe permitem executar acções de angariação de novos clientes, automatizar acções de marketing directo, monitorização da actividade da força de vendas com os actuais e potenciais clientes e análise de informação em tempo real, conseguindo antecipar-se à concorrência e reagir com toda a rapidez a mudanças no mercado.
+                        </p>
+                    </div>
+                </div>
+                <div id="info11" class="content-item">
+                    <h1>Solução de Gestão e ERP</h1>
+                    <div class="software">
+                        <img src="Images/erp.png" alt="">
+                        <h3>A solução avançada para a gestão completa da empresa. Aumente a produtividade e reduza custos com o software de gestão mais completo.</h3>
+                        <p> 
+                            A solução avançada para a gestão completa da empresa. Aumente a produtividade e reduza custos com o software de gestão mais completo.
+                        </p>
+                        <p>
+                            A necessidade de alto desempenho sentida pelas empresas implica, não apenas uma medição e monitorização contínuas, mas também antecipar as acções adequadas. Não é suficiente, para impulsionar os seus negócios, olhar apenas para trás. O sistema de gestão de desempenho exige o estabelecimento de objectivos e a capacidade de reportar resultados de desempenho em tempo útil para todos na organização.
+                        </p>
+                        <p>
+                            As nossas soluções de Gestão e ERP vão ajudá-lo a criar uma cultura de alta performance, onde todas as partes estão conscientes do que é importante para a empresa, como a empresa está e onde o trabalho de cada um se encaixa dentro da organização.
+                        </p>   
+                    </div>
+                </div>
+                <div id="info12" class="content-item">
+                    <h1>Solução para Logística e Distribuição</h1>
+                    <div class="software">
+                        <img src="Images/logistica.png" alt="">
+                        <h3>Optimize a logística na sua empresa e minimize os custos de armazenagem.</h3>
+                        <p>
+                            Distribuição eficaz significa ter as ferramentas certas para planear, montar, enviar e entregar as mercadorias que os seus clientes querem, quando eles as querem. É vital não só gerir as necessidades de distribuição da sua organização, mas também executá-las com o máximo de eficácia. Para isso, é imprescindível uma solução de software adequada.
+                        </p>
+                        <p>
+                            A nossa solução de gestão de distribuição oferece uma gama completa de funcionalidades que o vão ajudar a atingir os objectivos de velocidade e eficácia da sua organização. E não esquecemos a gestão da cadeia de abastecimento, o controlo de fornecedores, a gestão de stocks e armazéns e muito mais. Assim, se a sua empresa simplesmente comprar, embalar e transportar ou fornecer produtos através de um canal de fornecimento e precisar de satisfazer clientes altamente exigentes, esta aplicação transforma-se numa vantagem competitiva pois toda a operação assenta num sistema de informação com provas dadas.
+                        </p>
+                    </div>
+                </div>
+                <div id="info13" class="content-item">
+                <h1>Software Retalho</h1>
+                <div class="software">
+                    <img src="Images/tecnico.png" alt="">
+                    <h3>Faça crescer o seu negócio. Controle de perto as operações na loja.</h3>
+                    <p>
+                        No mercado global de hoje, os retalhistas e comerciantes procuram soluções que lhes permitam criar novas experiências de compra e diferenciarem-se da sua concorrência. Se você é um retalhista ou um comerciante vai necessitar de ultrapassar os desafios de gerir múltiplos canais de venda, melhorar a experiência de compra dos seus clientes, identificar o portefólio de produtos mais rentável, assegurar a operação logística sem falhas e integrar todas estas funções no sistema de informação da empresa.  
+                    </p>
+                    <p>
+                        O software de retalho PHC, já com milhares de implementações realizadas em lojas de todas as dimensões, cadeias de lojas nacionais e multinacionais, são a forma para fazer crescer o seu negócio, aumentar o profissionalismo e segurança e, ainda, aumentar a satisfação dos seus clientes.  
+                    </p> 
+                    <p>
+                        Com uma solução de back office potente, o conjunto de funcionalidades disponíveis vão permitir a gestão do negócio do princípio ao fim, assegurando nos vários pontos a rentabilidade que pretende, a gestão de stocks e uma excelente operacionalidade no ponto de venda, tudo isto com informação em tempo real.
+                    </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.sidebar nav ul li a');
+    const contentItems = document.querySelectorAll('.content-item');
+
+    // Função para ativar o conteúdo com base no hash da URL
+    function activateContentByHash() {
+        const hash = window.location.hash.substring(1); // Remove o '#'
+        if (hash) {
+            contentItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            const targetContent = document.getElementById(hash);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        }
+    }
+
+    // Ativa conteúdo ao clicar nos links
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute('data-content');
+            if (targetId) {
+                contentItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+                // Atualiza a URL sem causar rolagem
+                history.pushState({}, '', `sidebar.html#${targetId}`);
+            }
+        });
+    });
+
+    // Ativa conteúdo ao carregar a página com hash na URL
+    activateContentByHash();
+});
+
+
+        </script>
+    </main>
+    <footer>
+        <div class="footerimg">
+            
+            <img src="https://www.gefguarda.pt/sites/default/files/banner/portugal.png" alt="">
+        </div>
+        <p>© GEFGuarda - Serviços Gestão Informática e Telecomunicações Lda Guarda - Sé</p>
+        <a href="../../privacidade.html">Política de Privacidade |</a>  <a href="#">Política de Cookies |</a>  <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" target="_blank">Livro de Reclamações</a>
+        <ul class="wrapper">
+            <a href="https://www.facebook.com/p/GEFGuarda-Lda-100063829591952/?_rdr" target="_blank">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <svg
+                    viewBox="0 0 320 512"
+                    height="1.2em"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    ></path>
+                  </svg>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/gefguarda/" target="_blank">
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.2em"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    ></path>
+                  </svg>
+                </li>
+            </a>
+          </ul>
+          
+    </footer>
+</body>
+
+</html>

@@ -76,10 +76,10 @@ body, html {
 }
 
 #frontpage p {
-    font-family: "Miriam Libre", sans-serif;
-    font-weight: 600;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 800;
     font-style: normal;
-    text-indent: 30px;
+    font-size: 28px;
     text-align: center;
 
 }
@@ -742,55 +742,88 @@ td p {
     right: 10px;
 }
 
-/**************phc software***********************/
+
+/********* Menu lateral PHC*****************/
 
 .container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    padding-left: 50px; 
-  }
-  
-  .sidebar {
-    width: 220px;
-    background-color: #900;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-title {
-    font-size: 1.2rem;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.sidebar {
+    box-shadow: 8px 20px 19px 0px rgba(0, 0, 0, 0.169);
+    max-height: 550px;
+    border-radius: 5px;
+    width: 250px;
+    background-color: rgb(208, 0, 0);
+    margin: 100px 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.menu-title {
+    color: white;
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar nav ul {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    text-align: center;
     list-style-type: none;
     padding: 0;
-  }
-  
-  .sidebar nav ul li {
-    margin-bottom: 5px;
-  }
-  
-  .sidebar nav ul li a {
-    color: #fff;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+   text-indent: 100px;
     text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
     display: block;
-    padding: 4px 10px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
-  
-  .sidebar nav ul li a:hover {
-    background-color: #fff;
-    color: #900;
-  }
-  
+}
+
+.software {
+    font-family:"MontSerrat";
+}
+
+.software img {
+    width: 100%;
+}
+
+.software h3 {
+    padding: 30px 0;
+}
+
+.software p {
+    text-align: left;
+}
 
 /****************footer**************************/
 footer{
@@ -926,73 +959,7 @@ footer a {
     display: none;
   }
 
-  /********* Menu lateral PHC*****************/
-
-  .sidebar {
-    width: 300px;
-    background-color: #900;
-    color: #fff;
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
   
-  .menu-title {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar nav ul li {
-    margin-bottom: 5px;
-  }
-  
-  .sidebar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 4px 10px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
-  
-  .sidebar nav ul li a:hover {
-    background-color: #fff;
-    color: #900;
-  }
-  
-  .content {
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .submenu-content {
-    display: none;
-  }
-  
-  .submenu-content.active {
-    display: block;
-  }
-
-  #phc {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 20px;
-
-  }
 
 @media only screen and (max-width: 1235px) {
 
