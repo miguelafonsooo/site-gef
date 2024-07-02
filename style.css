@@ -811,6 +811,7 @@ nav ul li a:hover {
 
 .software {
     font-family:"MontSerrat";
+    padding: 0px 50px 50px 50px;
 }
 
 .software img {
@@ -823,6 +824,7 @@ nav ul li a:hover {
 
 .software p {
     text-align: left;
+    
 }
 
 /****************footer**************************/
