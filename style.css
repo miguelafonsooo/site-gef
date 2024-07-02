@@ -28,7 +28,15 @@ body, html {
     color: #1176AB; /* Define a cor do texto como azul quando a classe 'scrolled' é adicionada */
 }
 
-#menuContent {
+#menuContent, #menuContent a{
+    display: none;
+}
+
+.menucontent {
+    display: none;
+}
+
+#customSubmenu, .custom-submenu {
     display: none;
 }
 
@@ -972,6 +980,10 @@ footer a {
 
 @media only screen and (max-width: 1235px) {
 
+    #menuContent a {
+        display: block;
+    }
+
     #frontpage {
         background-image: none;
         
@@ -1178,6 +1190,10 @@ footer a {
         width: auto;
         font-family: MontSerrat;
         overflow-x: hidden;
+    }
+
+    #menuContent a {
+        display: block;
     }
 
     
