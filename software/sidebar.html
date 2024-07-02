@@ -141,7 +141,7 @@
     <script src="../js/download/download2.js"></script>
     <main style="max-width: max-content;">
         <div class="container">
-            <div class="sidebar">
+            <div class="sidebar" id="sidebar">
                 <div class="menu-title">PHC</div>
                 <nav>
                     <ul>
@@ -367,22 +367,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.sidebar nav ul li a');
     const contentItems = document.querySelectorAll('.content-item');
+    const sidebar = document.getElementById('sidebar');
 
-    // Função para ativar o conteúdo com base no hash da URL
-    function activateContentByHash() {
-        const hash = window.location.hash.substring(1); // Remove o '#'
-        if (hash) {
-            contentItems.forEach(item => {
-                item.classList.remove('active');
-            });
-            const targetContent = document.getElementById(hash);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
-        }
-    }
-
-    // Ativa conteúdo ao clicar nos links
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -391,18 +377,24 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetId) {
                 contentItems.forEach(item => {
                     item.classList.remove('active');
+                    if (item.id === targetId) {
+                        item.classList.add('active');
+                    }
                 });
-                document.getElementById(targetId).classList.add('active');
-                // Atualiza a URL sem causar rolagem
-                history.pushState({}, '', `sidebar.html#${targetId}`);
+
+                // Fecha a sidebar quando um link é clicado no modo móvel
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('open');
+                }
             }
         });
     });
-
-    // Ativa conteúdo ao carregar a página com hash na URL
-    activateContentByHash();
 });
 
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('open');
+}
 
         </script>
     </main>
