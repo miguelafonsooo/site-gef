@@ -168,8 +168,10 @@ body, html {
 }
 
 .left a, .right a {
+    width: auto;
     font-weight: bolder;
-    padding: 0 10px;
+    padding: 0;
+    margin: 0 10px;
     font-size: 20px;
     text-decoration: none;
     color: white;
